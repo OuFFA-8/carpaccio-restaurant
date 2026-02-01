@@ -1,0 +1,73 @@
+<section id="menu" class="bg-black py-32 px-6 md:px-20 min-h-screen">
+  <div class="text-center mb-24">
+    <h2 class="text-amber-600 font-serif italic text-2xl mb-4 tracking-widest">Discover</h2>
+    <h3 class="text-white text-5xl md:text-7xl font-bold italic tracking-tighter uppercase">
+      La Carte
+    </h3>
+    <div class="w-32 h-[1px] bg-amber-600 mx-auto mt-8 opacity-50"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    @for (item of fullMenu; track item.id) {
+      <div
+        class="group relative h-[450px] overflow-hidden border border-white/5 hover:border-amber-600/50 transition-all duration-700"
+      >
+        <img
+          [src]="item.img"
+          class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 group-hover:opacity-60 transition duration-[1.5s]"
+          [alt]="item.ar"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"
+        ></div>
+
+        <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end text-right" dir="rtl">
+          <span
+            class="text-amber-500 font-serif italic text-lg mb-2 transform translate-y-4 group-hover:translate-y-0 transition duration-500 uppercase tracking-widest"
+          >
+            {{ item.it }}
+          </span>
+          <h4 class="text-white text-3xl font-bold mb-4 tracking-tight">
+            {{ item.ar }}
+          </h4>
+
+          <div
+            class="w-0 group-hover:w-full h-[2px] bg-amber-600 transition-all duration-700 mb-6"
+          ></div>
+
+          <p
+            class="text-gray-400 text-sm font-light leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100"
+          >
+            استمتع بأفضل المكونات الإيطالية المختارة بعناية لتحضير هذا القسم الفاخر.
+          </p>
+        </div>
+
+        @if (item.isSignature) {
+          <div
+            class="absolute top-6 left-6 z-30 bg-amber-600 text-white text-[10px] px-3 py-1 uppercase tracking-[0.2em] font-bold"
+          >
+            Signature
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-8">
+    <div
+      class="relative h-[300px] w-full overflow-hidden border border-white/5 group cursor-pointer"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1527030280862-64139fba04ca"
+        class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition duration-1000"
+      />
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <div class="text-center">
+          <h3 class="text-white text-4xl md:text-6xl font-serif italic">Arghila Lounge</h3>
+          <p class="text-amber-500 tracking-[0.5em] uppercase text-sm mt-4">أرقى أنواع الأراجيل</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

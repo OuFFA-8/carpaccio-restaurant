@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+html {
+  scroll-behavior: smooth; /* سكرول ناعم جداً */
+}
+
+/* تظبيط السكرول بار عشان يليق بالمطعم (اختياري) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d97706; /* لون Amber */
+  border-radius: 10px;
+}

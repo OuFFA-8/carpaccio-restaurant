@@ -1,0 +1,91 @@
+<section id="contact" class="min-h-screen bg-[#050505] text-white py-32 px-6 md:px-20">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="text-amber-600 font-serif italic text-2xl mb-2">تواصل معنا</h2>
+      <h3 class="text-5xl md:text-7xl font-bold tracking-tighter italic">Get In Touch</h3>
+      <div class="w-24 h-[1px] bg-amber-600 mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+      <div class="space-y-12 order-2 lg:order-1 text-right" dir="rtl">
+        <div>
+          <h4 class="text-amber-500 font-serif text-xl mb-4">موقعنا</h4>
+          <p class="text-gray-400 text-lg font-light leading-relaxed">
+            المنطقة السياحية، داون تاون<br />
+            القاهرة، مصر
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-amber-500 font-serif text-xl mb-4">للحجز والاستفسار</h4>
+          <p class="text-gray-400 text-lg font-light tracking-widest">+20 123 456 789</p>
+          <p class="text-gray-400 text-lg font-light tracking-widest">+20 987 654 321</p>
+        </div>
+
+        <div>
+          <h4 class="text-amber-500 font-serif text-xl mb-4">ساعات العمل</h4>
+          <p class="text-gray-400 text-sm font-light">يومياً: 12:00 مساءً - 01:00 صباحاً</p>
+          <p class="text-gray-400 text-sm font-light uppercase mt-2 text-amber-600">
+            ركن الأراجيل متاح حتى الفجر
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white/5 p-8 md:p-12 rounded-sm border border-white/10 order-1 lg:order-2">
+        <form (submit)="sendMessage()" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="الاسم"
+              class="bg-transparent border-b border-white/20 py-4 focus:border-amber-600 outline-none transition text-right"
+            />
+            <input
+              type="email"
+              placeholder="البريد الإلكتروني"
+              class="bg-transparent border-b border-white/20 py-4 focus:border-amber-600 outline-none transition text-right"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="الموضوع"
+            class="w-full bg-transparent border-b border-white/20 py-4 focus:border-amber-600 outline-none transition text-right"
+          />
+          <textarea
+            rows="4"
+            placeholder="رسالتك"
+            class="w-full bg-transparent border-b border-white/20 py-4 focus:border-amber-600 outline-none transition text-right resize-none"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full py-4 bg-amber-600 hover:bg-amber-700 text-white font-bold uppercase tracking-[0.2em] transition duration-500"
+          >
+            Send Message
+          </button>
+
+          @if (isSent) {
+            <div
+              class="bg-green-600/20 text-green-400 p-4 text-center text-sm border border-green-600/50 mt-4 animate-pulse"
+            >
+              تم استلام رسالتك بنجاح! سنتواصل معك قريباً.
+            </div>
+          }
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="mt-24 h-[400px] w-full grayscale opacity-50 hover:opacity-100 transition duration-1000 border border-white/10"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.60389551138!2d31.18842363198888!3d30.05948381001402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296efaa6095!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+    </div>
+  </div>
+</section>
