@@ -1,62 +1,71 @@
 <section
   id="home"
-  class="relative h-screen w-full flex items-center justify-center overflow-hidden"
+  class="relative h-screen w-full flex items-center justify-center overflow-hidden font-sans"
 >
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
-  >
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
     <source src="/images/3196344-uhd_3840_2160_25fps.mp4" type="video/mp4" />
   </video>
 
-  <div class="absolute inset-0 bg-black/50 z-10"></div>
+  <div class="absolute inset-0 bg-black/40 z-10"></div>
 
-  <div class="relative z-20 text-center text-white px-4">
-    <h1 class="text-7xl md:text-9xl font-serif italic mb-4 tracking-tighter animate-fade-in">
+  <div class="relative z-20 text-center text-white px-4 animate-fade-in-up">
+    <h1
+      class="text-6xl md:text-8xl lg:text-9xl font-serif italic mb-4 tracking-tighter drop-shadow-lg"
+    >
       Carpaccio
     </h1>
-    <p class="text-lg md:text-2xl font-light tracking-[0.4em] uppercase text-amber-500 mb-8">
+    <p
+      class="text-sm md:text-xl lg:text-2xl font-light tracking-[0.3em] md:tracking-[0.4em] uppercase text-[#c6a266] mb-10"
+    >
       The Essence of Italian Taste
     </p>
+
     <a
       href="#menu"
-      class="inline-block px-10 py-4 border border-white/30 hover:bg-amber-600 hover:border-amber-600 transition-all duration-500 text-xs tracking-widest uppercase cursor-pointer"
+      class="inline-block px-8 py-3 md:px-10 md:py-4 border border-white/30 text-white hover:bg-[#c6a266] hover:border-[#c6a266] hover:text-black transition-all duration-500 text-[10px] md:text-xs tracking-widest uppercase cursor-pointer"
     >
       Explore the Menu
     </a>
   </div>
 
-  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-    <div class="w-[1px] h-16 bg-gradient-to-b from-white to-transparent"></div>
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce hidden md:block">
+    <div class="w-[1px] h-16 bg-gradient-to-b from-[#c6a266] to-transparent"></div>
   </div>
 </section>
 
-<section id="about" class="bg-[#0a0a0a] py-24 px-6 md:px-20">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-    <div class="order-2 md:order-1 relative group">
+<section id="about" class="bg-[#0a0a0a] py-16 md:py-24 px-6 md:px-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="order-2 lg:order-1 relative group mx-auto lg:mx-0 max-w-md lg:max-w-full">
       <img
         src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800"
-        class="rounded-lg shadow-2xl grayscale group-hover:grayscale-0 transition duration-1000"
+        class="rounded-sm shadow-2xl grayscale group-hover:grayscale-0 transition duration-1000 relative z-10"
         alt="Chef Craft"
       />
-      <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-amber-600"></div>
+      <div
+        class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#c6a266] z-0"
+      ></div>
+      <div
+        class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-[#c6a266] z-0"
+      ></div>
     </div>
 
-    <div class="order-1 md:order-2 text-right" dir="rtl">
-      <span class="text-amber-600 font-serif italic text-xl">قصتنا</span>
-      <h2 class="text-white text-4xl md:text-6xl font-bold mt-2 mb-6 tracking-tight">
-        فن تقديم الطعام
+    <div class="order-1 lg:order-2 text-center lg:text-right" dir="rtl">
+      <span class="text-[#c6a266] font-serif italic text-xl md:text-2xl block mb-2">قصتنا</span>
+      <h2
+        class="text-white text-3xl md:text-5xl font-bold mb-6 tracking-tight font-serif leading-tight"
+      >
+        فن تقديم الطعام <br />
+        بلمسة إيطالية
       </h2>
-      <p class="text-gray-400 text-lg leading-relaxed mb-8 font-light">
+      <p
+        class="text-gray-400 text-sm md:text-lg leading-loose mb-8 font-light max-w-2xl mx-auto lg:mr-0"
+      >
         في "كرباتشيو"، نؤمن أن كل طبق هو لوحة فنية. اسمنا مستوحى من الدقة الإيطالية، ونحن ملتزمون
         بتقديم تجربة طعام فريدة تجمع بين المكونات الطازجة وأسرار الطهي التقليدية. من مقبلاتنا
-        الباردة وصولاً إلى أطباق الشيف الخاصة، كل لقمة هي رحلة إلى قلب إيطاليا.
+        الباردة وصولاً إلى أطباق الشيف الخاصة.
       </p>
       <button
-        class="text-white border-b border-amber-600 pb-2 hover:text-amber-600 transition tracking-widest uppercase text-sm"
+        class="text-white border-b border-[#c6a266] pb-1 hover:text-[#c6a266] transition-colors duration-300 tracking-[0.2em] uppercase text-xs"
       >
         Read Our Full Story
       </button>
@@ -64,45 +73,66 @@
   </div>
 </section>
 
-<section id="menu" class="bg-black py-24">
-  <div class="text-center mb-16">
-    <h2 class="text-white text-5xl font-serif italic mb-4">The Selection</h2>
-    <div class="w-16 h-1 bg-amber-600 mx-auto"></div>
+<section id="menu" class="bg-black py-20 md:py-24">
+  <div class="text-center mb-12 md:mb-16 px-4">
+    <h2 class="text-white text-4xl md:text-6xl font-serif italic mb-4">The Selection</h2>
+    <div class="w-24 h-[2px] bg-[#c6a266] mx-auto"></div>
+    <p class="text-gray-500 mt-4 text-xs uppercase tracking-widest">
+      Discover our signature dishes
+    </p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-1">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
     @for (cat of categories; track cat.id) {
-      <div class="group relative h-[400px] overflow-hidden cursor-pointer">
+      <div class="group relative h-[350px] md:h-[450px] overflow-hidden cursor-pointer">
         <img
           [src]="cat.img"
-          class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 group-hover:opacity-80 transition duration-1000"
+          class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition duration-1000 ease-in-out"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-        <div class="absolute bottom-8 right-8 text-right">
-          <p class="text-amber-500 font-serif italic text-sm mb-1">{{ cat.it }}</p>
-          <h3 class="text-white text-2xl font-bold tracking-wide uppercase">{{ cat.ar }}</h3>
-        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
         <div
-          class="absolute inset-0 border-[0px] group-hover:border-[15px] border-amber-600/20 transition-all duration-500"
+          class="absolute bottom-8 right-6 text-right transform group-hover:-translate-y-2 transition duration-500"
+        >
+          <p class="text-[#c6a266] font-serif italic text-sm md:text-base mb-1">{{ cat.it }}</p>
+          <h3 class="text-white text-2xl md:text-3xl font-bold tracking-wide uppercase font-serif">
+            {{ cat.ar }}
+          </h3>
+        </div>
+
+        <div
+          class="absolute inset-0 border-[0px] group-hover:border-[10px] border-[#c6a266]/30 transition-all duration-500"
         ></div>
       </div>
     }
   </div>
 </section>
 
-<section class="relative h-[600px] flex items-center justify-end px-6 md:px-24 overflow-hidden">
+<section
+  class="relative h-[500px] md:h-[600px] flex items-center justify-center md:justify-end px-6 md:px-24 overflow-hidden"
+>
   <img
     src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?q=80&w=1200"
-    class="absolute inset-0 w-full h-full object-cover opacity-40"
+    class="absolute inset-0 w-full h-full object-cover opacity-50"
   />
-  <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black"></div>
 
-  <div class="relative z-10 max-w-lg text-right" dir="rtl">
-    <h2 class="text-amber-600 font-serif italic text-2xl mb-2">الأجواء</h2>
-    <h3 class="text-white text-5xl font-bold mb-6 italic">ركن الأراجيل</h3>
-    <p class="text-gray-300 leading-loose mb-8 font-light">
+  <div
+    class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black via-black/50 to-transparent"
+  ></div>
+
+  <div class="relative z-10 max-w-lg text-center md:text-right" dir="rtl">
+    <h2 class="text-[#c6a266] font-serif italic text-2xl md:text-3xl mb-2">الأجواء</h2>
+    <h3 class="text-white text-4xl md:text-6xl font-bold mb-6 italic font-serif">ركن الأراجيل</h3>
+    <p class="text-gray-200 text-sm md:text-lg leading-loose mb-8 font-light">
       استمتع بأمسية هادئة في ركن الأراجيل الخاص بنا، حيث الأجواء الراقية والخدمة المميزة التي تليق
-      بك.
+      بك، مع تشكيلة فاخرة من النكهات.
     </p>
+
+    <button
+      class="px-8 py-3 bg-[#c6a266] text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition duration-300"
+    >
+      احجز طاولتك الآن
+    </button>
   </div>
 </section>

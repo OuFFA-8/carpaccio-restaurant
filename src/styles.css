@@ -1,19 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
-html {
-  scroll-behavior: smooth; /* سكرول ناعم جداً */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #000;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif {
+    font-family: 'Cairo', sans-serif;
+  }
 }
 
-/* تظبيط السكرول بار عشان يليق بالمطعم (اختياري) */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
-
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #d97706; /* لون Amber */
+  background: #c6a266;
   border-radius: 10px;
+}
+
+@layer components {
+  .nav-link {
+    @apply transition-all duration-300 cursor-pointer hover:text-[#c6a266] relative;
+  }
+  .active-link {
+    color: #c6a266 !important;
+  }
+  .active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #c6a266;
+    border-radius: 999px;
+  }
+  .mobile-link {
+    @apply text-2xl text-white uppercase tracking-[0.3em] font-light transition-colors duration-300;
+  }
+  .active-mobile {
+    color: #c6a266 !important;
+    @apply font-medium scale-110;
+  }
 }
