@@ -2,10 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 @layer base {
-  *,
-  ::before,
-  ::after {
-    font-family: 'Cairo', sans-serif !important;
+  /* 1. بنخلي Cairo هو الخط الأساسي لكل شيء ماعدا الـ Serif */
+  html,
+  body,
+  p,
+  span,
+  a,
+  button,
+  input,
+  textarea {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  /* 2. بنجبر أي حاجة واخدة font-serif ترجع للخط القديم اللي كان عاجبك */
+  h1,
+  .font-serif {
+    font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif !important;
   }
 
   html {
@@ -14,13 +26,14 @@
   }
 }
 
-/* باقي كود السكرول بار والـ components زي ما هو */
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #c6a266;
   border-radius: 10px;
@@ -30,9 +43,11 @@
   .nav-link {
     @apply transition-all duration-300 cursor-pointer hover:text-[#c6a266] relative;
   }
+
   .active-link {
     color: #c6a266 !important;
   }
+
   .active-link::after {
     content: '';
     position: absolute;
@@ -43,9 +58,11 @@
     background-color: #c6a266;
     border-radius: 999px;
   }
+
   .mobile-link {
     @apply text-2xl text-white uppercase tracking-[0.3em] font-light transition-colors duration-300;
   }
+
   .active-mobile {
     color: #c6a266 !important;
     @apply font-medium scale-110;
