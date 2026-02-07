@@ -2,20 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 @layer base {
+  *,
+  ::before,
+  ::after {
+    font-family: 'Cairo', sans-serif !important;
+  }
+
   html {
-    font-family: 'Cairo', sans-serif;
     scroll-behavior: smooth;
     background-color: #000;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  .font-serif {
-    font-family: 'Cairo', sans-serif;
-  }
 }
 
+/* باقي كود السكرول بار والـ components زي ما هو */
 ::-webkit-scrollbar {
   width: 6px;
 }
