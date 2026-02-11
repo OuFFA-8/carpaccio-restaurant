@@ -2,22 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 @layer base {
-  /* 1. بنخلي Cairo هو الخط الأساسي لكل شيء ماعدا الـ Serif */
   html,
   body,
   p,
   span,
   a,
   button,
+  h1,
   input,
   textarea {
     font-family: 'Cairo', sans-serif;
-  }
-
-  /* 2. بنجبر أي حاجة واخدة font-serif ترجع للخط القديم اللي كان عاجبك */
-  h1,
-  .font-serif {
-    font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif !important;
   }
 
   html {
@@ -42,10 +36,13 @@
 @layer components {
   .nav-link {
     @apply transition-all duration-300 cursor-pointer hover:text-[#c6a266] relative;
+    display: inline-block; /* ضفنا دي هنا عشان الهوفر والخط يظبطوا */
   }
 
   .active-link {
     color: #c6a266 !important;
+    position: relative; /* مهم جداً */
+    display: inline-block;
   }
 
   .active-link::after {

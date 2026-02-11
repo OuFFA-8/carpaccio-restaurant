@@ -1,0 +1,68 @@
+<section class="min-h-screen bg-[#050505] text-white pt-24 pb-20 px-4 md:px-10 font-sans">
+  <div class="max-w-7xl mx-auto mb-8">
+    <a
+      routerLink="/menu"
+      class="inline-flex items-center text-[#c6a266] hover:text-white transition-colors duration-300 gap-2 cursor-pointer group"
+    >
+      <span class="text-xl transform group-hover:-translate-x-1 transition-transform">←</span>
+      <span class="text-xs uppercase tracking-[0.2em] font-bold">العودة للأقسام</span>
+    </a>
+  </div>
+
+  @if (currentCategory) {
+    <div class="text-center mb-16 relative">
+      <h2 class="text-[#c6a266] font-serif italic text-xl mb-2">{{ currentCategory.it }}</h2>
+      <h1 class="text-4xl md:text-6xl font-bold font-serif uppercase tracking-tight">
+        {{ currentCategory.ar }}
+      </h1>
+      <div class="w-20 h-[1px] bg-[#c6a266] mx-auto mt-6"></div>
+    </div>
+  }
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+    @for (item of currentItems; track item.id) {
+      <div
+        class="flex flex-col md:flex-row gap-6 group border-b border-white/5 pb-8 hover:border-[#c6a266]/30 transition-colors duration-500"
+      >
+        <div class="w-full md:w-40 h-40 shrink-0 overflow-hidden rounded-sm relative">
+          <img
+            [src]="item.img"
+            [alt]="item.ar"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-out grayscale group-hover:grayscale-0"
+          />
+          @if (item.isSignature) {
+            <span
+              class="absolute top-0 right-0 bg-[#c6a266] text-black text-[8px] font-bold px-2 py-1 uppercase"
+              >Signature</span
+            >
+          }
+        </div>
+
+        <div class="flex-1 text-right" dir="rtl">
+          <div class="flex justify-between items-baseline mb-2">
+            <h3
+              class="text-xl md:text-2xl font-bold font-serif text-white group-hover:text-[#c6a266] transition-colors"
+            >
+              {{ item.ar }}
+            </h3>
+            <span class="text-[#c6a266] text-lg font-mono font-bold whitespace-nowrap mr-4"
+              >{{ item.price }} <small class="text-xs">₪</small></span
+            >
+          </div>
+
+          <span class="block text-gray-500 text-xs italic font-serif mb-3" dir="ltr">{{
+            item.it
+          }}</span>
+
+          <p class="text-gray-400 text-sm font-light leading-relaxed">
+            {{ item.description }}
+          </p>
+        </div>
+      </div>
+    } @empty {
+      <div class="col-span-2 text-center py-20">
+        <p class="text-gray-500 text-xl font-serif italic">جاري تحضير أطباق هذا القسم...</p>
+      </div>
+    }
+  </div>
+</section>

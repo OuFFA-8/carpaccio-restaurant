@@ -1,0 +1,59 @@
+/* الحركة العامة للظهور من الأسفل */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* حركة الكروت (Staggered Animation) */
+/* ده بيخلي الكروت تظهر ورا بعضها مش كلها مرة واحدة */
+.category-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardEntry 0.6s ease-out forwards;
+}
+
+@keyframes cardEntry {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* إضافة تأخير زمني لكل كارت (أول 8 كروت كمثال) */
+.category-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.category-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.category-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.category-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.category-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.category-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.category-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.category-card:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+/* إخفاء شريط التمرير العرضي للأجهزة الضعيفة */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
