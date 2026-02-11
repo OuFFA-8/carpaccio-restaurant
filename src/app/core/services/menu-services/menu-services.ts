@@ -26,61 +26,7 @@ export class MenuServices {
   //   // --- قسم الفطور (5 أطباق) ---
 
   //   // --- قسم الشوربات (5 أطباق) ---
-  //   {
-  //     id: 'soup-hamousta',
-  //     categoryId: 'شوربات // Zuppa Signature',
-  //     it: 'Kibbeh Hamousta',
-  //     ar: 'كبة حاموستا (توقيع كرباتشيو)',
-  //     price: '39',
-  //     img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
-  //     description:
-  //       'كبة سميد محشوة بلحم اسادو مدخن فاخر، مطهوة في شوربة كرفس حامضة لتجربة مذاق فريدة تجمع بين الأصالة والابتكار.',
-  //     isSignature: true,
-  //   },
-  //   {
-  //     id: 'soup-beetroot',
-  //     categoryId: 'شوربات // Zuppa Signature',
-  //     it: 'Beetroot Kibbeh Soup',
-  //     ar: 'شوربة كبة البنجر',
-  //     price: '38',
-  //     img: 'https://images.unsplash.com/photo-1547592115-464879f90264?q=80&w=1974',
-  //     description:
-  //       'كبة سميد فاخرة تقدم في شوربة بنجر صحية وغنية، تتميز بلونها الزاهي ونكهتها الفريدة التي تضفي لمسة من الحيوية على مائدتك.',
-  //     isSignature: false,
-  //   },
-  //   {
-  //     id: 'soup-lentil',
-  //     categoryId: 'شوربات // Zuppa Signature',
-  //     it: 'Lentil Soup',
-  //     ar: 'شوربة عدس على طريقة كرباتشيو',
-  //     price: '29',
-  //     img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071', // استبدلها بصورة شوربة عدس
-  //     description:
-  //       'الشوربة التقليدية بلمسة كرباتشيو الخاصة، محضرة من أجود أنواع العدس والبهارات العطرية لتمنحك الدفء والمذاق الأصيل.',
-  //     isSignature: false,
-  //   },
-  //   {
-  //     id: 'soup-vegetable',
-  //     categoryId: 'شوربات // Zuppa Signature',
-  //     it: 'Vegetable Soup',
-  //     ar: 'شوربة خضار',
-  //     price: '19',
-  //     img: 'https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?q=80&w=1974',
-  //     description:
-  //       'مزيج طازج من خضروات الموسم المطهوة بعناية في مرق غني بالنكهات الطبيعية، خيار صحي وخفيف.',
-  //     isSignature: false,
-  //   },
-  //   {
-  //     id: 'soup-seafood',
-  //     categoryId: 'شوربات // Zuppa Signature',
-  //     it: 'Seafood Soup',
-  //     ar: 'شوربة فواكه البحر',
-  //     price: '34',
-  //     img: 'https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=1974',
-  //     description:
-  //       'تشكيلة فاخرة من ثمار البحر (جمبري، كلماري، وبلح البحر) مطهوة في مرق غني بالكريمة والأعشاب الإيطالية لتجربة بحرية لا تُنسى.',
-  //     isSignature: true,
-  //   },
+
   //   // --- المقبلات الباردة (Antipasti Freddi) ---
   //   {
   //     id: 'antipasti-beef-carpaccio',
@@ -1047,7 +993,7 @@ export class MenuServices {
       id: 'breakfast',
       ar: 'قسم الفطور',
       it: 'Colazione',
-      img: 'https://images.unsplash.com/photo-1544517175-b7143c5c2da3?q=80&w=2070',
+      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
     },
     {
       id: 'soups',
@@ -1065,7 +1011,7 @@ export class MenuServices {
       id: 'hot-appetizers',
       ar: 'المقبلات الساخنة',
       it: 'Antipasti Caldi',
-      img: 'https://images.unsplash.com/photo-1603048297172-c92544798d5e?q=80&w=2070',
+      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
     },
     {
       id: 'italian',
@@ -1077,7 +1023,7 @@ export class MenuServices {
       id: 'main',
       ar: 'الأطباق الرئيسية',
       it: 'Piatti Principali',
-      img: 'https://images.unsplash.com/photo-1603048297172-c92544798d5e?q=80&w=2070',
+      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
     },
     {
       id: 'chef',
@@ -1101,13 +1047,13 @@ export class MenuServices {
       id: 'kids',
       ar: 'وجبات الأطفال',
       it: 'Menu Bambini',
-      img: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?q=80&w=2070',
+      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
     },
     {
       id: 'extras',
       ar: 'قسم الإضافات',
       it: 'Contorni',
-      img: 'https://images.unsplash.com/photo-1573015084184-3ce2af99b748?q=80&w=2070',
+      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
     },
     {
       id: 'desserts',
@@ -1146,7 +1092,7 @@ export class MenuServices {
       id: 'shisha',
       ar: 'قسم الأراجيل',
       it: 'Arghila Lounge',
-      img: 'https://images.unsplash.com/photo-1527030126234-08ecff386121?q=80&w=1974',
+      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
     },
   ];
 
@@ -1158,7 +1104,7 @@ export class MenuServices {
       it: 'Carpaccio Breakfast Experience',
       ar: 'تجربة فطور كرباتشيو',
       price: '69 / 129', // السعر للشخص وللشخصين
-      img: 'https://images.unsplash.com/photo-1544517175-b7143c5c2da3?q=80&w=2070', // صورة فطار ملكي
+      img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1980', // صورة فطار ملكي
       description:
         'استمتع بتجربة افطار كرباتشيو المميزة لشخص او شخصين. تتضمن اومليت حسب الطلب او بيض عيون، سلطة شيري وأعشاب طازجة، 3 أنواع أجبان مختارة بعناية، قلاية بندورة إيطالية، 9 أنواع مشهيات فاخرة، تقدم مع خبز طابون فوكاتشا طازجة من فرن كرباتشيو، مشروب ساخن، وعصير طبيعي.',
       isSignature: true,
@@ -1169,7 +1115,7 @@ export class MenuServices {
       it: 'Verona Healthy Bowl',
       ar: 'طبق فيرونا الصحي',
       price: '49',
-      img: 'https://images.unsplash.com/photo-1511690656952-34342d57a0f0?q=80&w=1964', // صورة شوفان وفواكه
+      img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1980', // صورة شوفان وفواكه
       description:
         'وعاء فيرونا الصحي يأتيك مليئاً بالفواكة الموسمية الطازجة بالإضافة الى الشوفان المقرمش والجرانولا، يقدم مع لبن يوناني، عسل طبيعي، وطحينية فاخرة.',
       isSignature: false,
@@ -1211,16 +1157,59 @@ export class MenuServices {
     // --- أمثلة للشوربات ---
     {
       id: 'soup-1',
-      categoryId: 'soups', // لاحظ الربط هنا
-      ar: 'كبة حاموستا',
+      categoryId: 'soups',
       it: 'Kibbeh Hamousta',
+      ar: 'كبة حاموستا (توقيع كرباتشيو)',
       price: '39',
-      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd',
-      description: 'كبة سميد محشوة بلحم اسادو...',
+      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      description:
+        'كبة سميد محشوة بلحم اسادو مدخن فاخر، مطهوة في شوربة كرفس حامضة لتجربة مذاق فريدة تجمع بين الأصالة والابتكار.',
       isSignature: true,
     },
-
-    // ... (هنا هتنسخ كل الأطباق اللي عملناها قبل كده بس تأكد من categoryId لكل واحد)
+    {
+      id: 'soup-2',
+      categoryId: 'soups',
+      it: 'Beetroot Kibbeh Soup',
+      ar: 'شوربة كبة البنجر',
+      price: '38',
+      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      description:
+        'كبة سميد فاخرة تقدم في شوربة بنجر صحية وغنية، تتميز بلونها الزاهي ونكهتها الفريدة التي تضفي لمسة من الحيوية على مائدتك.',
+      isSignature: false,
+    },
+    {
+      id: 'soup-3',
+      categoryId: 'soups',
+      it: 'Lentil Soup',
+      ar: 'شوربة عدس على طريقة كرباتشيو',
+      price: '29',
+      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071', // استبدلها بصورة شوربة عدس
+      description:
+        'الشوربة التقليدية بلمسة كرباتشيو الخاصة، محضرة من أجود أنواع العدس والبهارات العطرية لتمنحك الدفء والمذاق الأصيل.',
+      isSignature: false,
+    },
+    {
+      id: 'soup-4',
+      categoryId: 'soups',
+      it: 'Vegetable Soup',
+      ar: 'شوربة خضار',
+      price: '19',
+      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      description:
+        'مزيج طازج من خضروات الموسم المطهوة بعناية في مرق غني بالنكهات الطبيعية، خيار صحي وخفيف.',
+      isSignature: false,
+    },
+    {
+      id: 'soup-5',
+      categoryId: 'soups',
+      it: 'Seafood Soup',
+      ar: 'شوربة فواكه البحر',
+      price: '34',
+      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      description:
+        'تشكيلة فاخرة من ثمار البحر (جمبري، كلماري، وبلح البحر) مطهوة في مرق غني بالكريمة والأعشاب الإيطالية لتجربة بحرية لا تُنسى.',
+      isSignature: true,
+    },
   ];
 
   getCategories() {

@@ -1,23 +1,30 @@
 @import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;700&family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
-@layer base {
-  html,
-  body,
-  p,
-  span,
-  a,
-  button,
-  h1,
-  input,
-  textarea {
-    font-family: 'Cairo', sans-serif;
-  }
+/* العناوين الكبيرة (Our Menu / Benvenuti) */
+h2,
+h3,
+.font-serif {
+  font-family: 'Playfair Display', serif !important;
+}
 
-  html {
-    scroll-behavior: smooth;
-    background-color: #000;
-  }
+/* أسماء الأقسام باللاتيني (It) */
+.font-serif.italic {
+  font-family: 'Cinzel', serif !important;
+  letter-spacing: 2px;
+}
+
+/* الكلام العربي (أسماء الأطباق والوصف) */
+body,
+h1,
+h4,
+p {
+  font-family: 'Alexandria', sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000;
 }
 
 ::-webkit-scrollbar {
