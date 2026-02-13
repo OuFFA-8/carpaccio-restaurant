@@ -92,6 +92,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-2">
     @for (cat of categories; track cat.id; let i = $index) {
       <div
+        [routerLink]="['/menu', cat.category, cat.categoryId]"
         class="reveal group relative h-[400px] md:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
         [style.transition-delay]="i * 0.15 + 's'"
       >
@@ -141,7 +142,8 @@
       بك، مع تشكيلة فاخرة من النكهات.
     </p>
     <button
-      class="px-12 py-4 bg-[#c6a266] text-black text-[10px] font-black uppercase tracking-[0.4em] hover:bg-white transition-all duration-500 shadow-xl"
+      routerLink="category/shisha"
+      class="px-12 py-4 bg-[#c6a266] text-blacsk text-[10px] font-black uppercase tracking-[0.4em] hover:bg-white transition-all duration-500 shadow-xl"
     >
       احجز طاولتك الآن
     </button>

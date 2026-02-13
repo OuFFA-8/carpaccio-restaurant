@@ -14,11 +14,15 @@ export class Home implements AfterViewInit {
     {
       id: 1,
       ar: 'الباستا',
+      category: 'category',
+      categoryId: 'italian',
       it: 'La Pasta',
       img: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=500',
     },
     {
       id: 2,
+      category: 'category',
+      categoryId: 'main',
       ar: 'الأطباق الرئيسية',
       it: 'Piatti Principali',
       img: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500',
@@ -26,12 +30,17 @@ export class Home implements AfterViewInit {
     {
       id: 3,
       ar: 'مطبخ الشيف',
+
+      category: 'category',
+      categoryId: 'chef',
       it: "Chef's Signature",
       img: 'https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=500',
     },
     {
       id: 4,
       ar: 'الحلويات',
+      category: 'category',
+      categoryId: 'desserts',
       it: 'Dolci',
       img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=500',
     },
