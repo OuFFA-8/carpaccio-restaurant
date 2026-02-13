@@ -1,67 +1,107 @@
-<section class="min-h-screen bg-[#050505] text-white pt-24 pb-20 px-4 md:px-10 font-sans">
-  <div class="max-w-7xl mx-auto mb-8">
+<section
+  class="min-h-screen bg-[#050505] text-white pt-24 pb-20 px-4 md:px-10 font-sans overflow-x-hidden"
+>
+  <div class="max-w-7xl mx-auto mb-10 reveal fade-right">
     <a
       routerLink="/menu"
-      class="inline-flex items-center text-[#c6a266] hover:text-white transition-colors duration-300 gap-2 cursor-pointer group"
+      class="inline-flex items-center text-[#c6a266] hover:text-white transition-colors duration-300 gap-3 cursor-pointer group py-2"
     >
-      <span class="text-xl transform group-hover:-translate-x-1 transition-transform">←</span>
-      <span class="text-xs uppercase tracking-[0.2em] font-bold">العودة للأقسام</span>
+      <span class="text-2xl transform group-hover:-translate-x-2 transition-transform duration-300"
+        >←</span
+      >
+      <span class="text-[10px] uppercase tracking-[0.2em] font-bold">العودة للأقسام</span>
     </a>
   </div>
 
   @if (currentCategory) {
-    <div class="text-center mb-16 relative">
-      <h2 class="text-[#c6a266] font-serif italic text-xl mb-2">{{ currentCategory.it }}</h2>
-      <h1 class="text-4xl md:text-6xl font-bold font-serif uppercase tracking-tight">
+    <div class="text-center mb-16 relative reveal">
+      <h2
+        class="text-[#c6a266] font-serif italic text-xl md:text-2xl mb-3 tracking-widest opacity-80"
+      >
+        {{ currentCategory.it }}
+      </h2>
+      <h1
+        class="text-4xl md:text-6xl font-bold font-serif uppercase tracking-tight text-white drop-shadow-lg"
+      >
         {{ currentCategory.ar }}
       </h1>
-      <div class="w-20 h-[1px] bg-[#c6a266] mx-auto mt-6"></div>
+      <div
+        class="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#c6a266] to-transparent mx-auto mt-8"
+      ></div>
     </div>
   }
 
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
-    @for (item of currentItems; track item.id) {
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
+    @for (item of currentItems; track item.id; let i = $index) {
       <div
-        class="flex flex-col md:flex-row gap-6 group border-b border-white/5 pb-8 hover:border-[#c6a266]/30 transition-colors duration-500"
+        class="item-card reveal flex flex-col md:flex-row gap-6 group border-b border-white/5 pb-8 hover:border-[#c6a266]/30 transition-all duration-500"
+        [style.transition-delay]="(i % 4) * 0.1 + 's'"
       >
-        <div class="w-full md:w-40 h-40 shrink-0 overflow-hidden rounded-sm relative">
+        <div class="w-full md:w-48 h-48 shrink-0 overflow-hidden rounded-md relative shadow-lg">
           <img
             [src]="item.img"
             [alt]="item.ar"
-            class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-out grayscale group-hover:grayscale-0"
+            loading="lazy"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-[1.5s] ease-out grayscale-[0.3] group-hover:grayscale-0"
           />
+          <div
+            class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"
+          ></div>
+
           @if (item.isSignature) {
             <span
-              class="absolute top-0 right-0 bg-[#c6a266] text-black text-[8px] font-bold px-2 py-1 uppercase"
-              >Signature</span
+              class="absolute top-3 right-3 bg-[#c6a266] text-black text-[9px] font-black px-3 py-1 uppercase tracking-widest shadow-md"
             >
+              Signature
+            </span>
           }
         </div>
 
-        <div class="flex-1 text-right" dir="rtl">
-          <div class="flex justify-between items-baseline mb-2">
-            <h3
-              class="text-xl md:text-2xl font-bold font-serif text-white group-hover:text-[#c6a266] transition-colors"
+        <div class="flex-1 text-right flex flex-col justify-between" dir="rtl">
+          <div>
+            <div class="flex justify-between items-start mb-2 pl-2">
+              <h3
+                class="text-xl md:text-2xl font-bold font-serif text-white group-hover:text-[#c6a266] transition-colors duration-300 leading-tight"
+              >
+                {{ item.ar }}
+              </h3>
+              <span
+                class="text-[#c6a266] text-xl font-light whitespace-nowrap mr-4 flex items-start gap-1"
+              >
+                {{ item.price }} <small class="text-xs mt-1">₪</small>
+              </span>
+            </div>
+
+            <span
+              class="block text-gray-500 text-xs italic font-serif mb-4 tracking-wider"
+              dir="ltr"
+              >{{ item.it }}</span
             >
-              {{ item.ar }}
-            </h3>
-            <span class="text-[#c6a266] text-lg font-mono font-bold whitespace-nowrap mr-4"
-              >{{ item.price }} <small class="text-xs">₪</small></span
+
+            <p
+              class="text-gray-400 text-sm font-light leading-relaxed group-hover:text-gray-300 transition-colors"
             >
+              {{ item.description }}
+            </p>
           </div>
 
-          <span class="block text-gray-500 text-xs italic font-serif mb-3" dir="ltr">{{
-            item.it
-          }}</span>
-
-          <p class="text-gray-400 text-sm font-light leading-relaxed">
-            {{ item.description }}
-          </p>
+          <div
+            class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2 group-hover:translate-y-0"
+          >
+            <span class="text-[#c6a266] text-[10px] border-b border-[#c6a266] pb-0.5 cursor-pointer"
+              >المزيد من التفاصيل</span
+            >
+          </div>
         </div>
       </div>
     } @empty {
-      <div class="col-span-2 text-center py-20">
-        <p class="text-gray-500 text-xl font-serif italic">جاري تحضير أطباق هذا القسم...</p>
+      <div class="col-span-2 text-center py-32 reveal">
+        <div
+          class="inline-block w-16 h-16 border-2 border-[#c6a266] border-t-transparent rounded-full animate-spin mb-6"
+        ></div>
+        <p class="text-gray-400 text-lg font-serif italic tracking-widest">
+          جاري تحضير أطباق هذا القسم...
+        </p>
       </div>
     }
   </div>

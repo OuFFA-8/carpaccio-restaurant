@@ -1,59 +1,187 @@
-/* الحركة العامة للظهور من الأسفل */
-.fade-in-up {
+/* ==========================================================================
+   1. الخطوط والألوان الأساسية (The Palette)
+   ========================================================================== */
+:root {
+  --gold: #c6a266;
+  --dark-bg: #050505;
+  --text-gray: #a0a0a0;
+}
+
+/* تحسين الخط العربي واللاتيني */
+.font-serif {
+  font-family: 'Playfair Display', serif !important;
+}
+.font-arabic {
+  font-family: 'Alexandria', sans-serif !important;
+}
+
+/* ==========================================================================
+   2. محرك الأنميشن للسكرول (Scroll Animation Engine)
+   ========================================================================== */
+
+/* الحالة الافتراضية قبل وصول السكرول */
+.reveal {
   opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease-out forwards;
+  transform: translateY(40px);
+  filter: blur(10px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 1.2s ease-out;
 }
 
-/* حركة الكروت (Staggered Animation) */
-/* ده بيخلي الكروت تظهر ورا بعضها مش كلها مرة واحدة */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 1.2s ease-out;
+}
+
+/* الحالة عند التفعيل (يتم إضافتها عبر الـ Intersection Observer في TS) */
+.reveal.show,
+.reveal-left.show,
+.reveal-right.show {
+  opacity: 1;
+  transform: translate(0);
+  filter: blur(0);
+}
+
+/* ==========================================================================
+   3. تصميم كروت الأقسام (Category Cards)
+   ========================================================================== */
+
 .category-card {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: cardEntry 0.6s ease-out forwards;
+  position: relative;
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: border-color 0.5s ease;
 }
 
-@keyframes cardEntry {
-  to {
+/* تأثير الصورة "الحية" (Ken Burns Effect) */
+.category-card img {
+  transition:
+    transform 6s ease-out,
+    filter 1s ease;
+  filter: brightness(0.6) grayscale(0.2);
+}
+
+/* ==========================================================================
+   4. التعامل مع الموبايل vs الكمبيوتر (Responsive UX)
+   ========================================================================== */
+
+/* --- للأجهزة التي تدعم الهوفر (الكمبيوتر) --- */
+@media (hover: hover) {
+  .category-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.4) grayscale(0);
+  }
+
+  .category-card:hover {
+    border-color: var(--gold);
+  }
+
+  /* إخفاء العناصر لتظهر فقط عند الهوفر في الكمبيوتر */
+  .hover-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+
+  .category-card:hover .hover-reveal {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* إضافة تأخير زمني لكل كارت (أول 8 كروت كمثال) */
+/* --- لأجهزة اللمس (الموبايل) --- */
+@media (max-width: 768px) {
+  .category-card {
+    height: 320px !important; /* ارتفاع أنسب للموبايل */
+  }
+
+  /* في الموبايل، المعلومات تظهر دايماً بوضوح */
+  .hover-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .category-card img {
+    filter: brightness(0.5); /* تعتيم دائم لبروز النص */
+  }
+
+  /* تأثير الضغطة اللمسية */
+  .category-card:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* ==========================================================================
+   5. تأثيرات اللمعان والأزرار (Shine & Buttons)
+   ========================================================================== */
+
+.btn-premium {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--gold);
+  color: black;
+  transition: all 0.4s ease;
+}
+
+/* أنيميشن اللمعة التي تمر على الزرار */
+.btn-premium::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: skewX(-20deg);
+  animation: buttonShine 4s infinite;
+}
+
+@keyframes buttonShine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+/* ==========================================================================
+   6. الظهور التدريجي للكروت (Staggered Delay)
+   ========================================================================== */
+
+/* لو مش عايز تستخدم JS للـ delay، الكلاسات دي بتعملها تلقائياً */
 .category-card:nth-child(1) {
-  animation-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 .category-card:nth-child(2) {
-  animation-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .category-card:nth-child(3) {
-  animation-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 .category-card:nth-child(4) {
-  animation-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 .category-card:nth-child(5) {
-  animation-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 .category-card:nth-child(6) {
-  animation-delay: 0.6s;
-}
-.category-card:nth-child(7) {
-  animation-delay: 0.7s;
-}
-.category-card:nth-child(8) {
-  animation-delay: 0.8s;
+  transition-delay: 0.6s;
 }
 
-/* إخفاء شريط التمرير العرضي للأجهزة الضعيفة */
+/* إخفاء السكرول بار المزعج */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

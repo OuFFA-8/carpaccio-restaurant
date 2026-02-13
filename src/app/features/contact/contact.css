@@ -1,0 +1,140 @@
+/* =========================================
+   1. Input Styling (The Luxury Look)
+   ========================================= */
+
+.luxury-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0;
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  text-align: right;
+  transition: all 0.4s ease;
+}
+
+.luxury-input:focus {
+  border-bottom-color: transparent;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-bar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #c6a266;
+  transition: 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.luxury-input:focus ~ .input-bar {
+  width: 100%;
+}
+
+/* =========================================
+   2. Button Animation
+   ========================================= */
+
+.btn-premium-send {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background: #c6a266;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 11px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.btn-premium-send:hover {
+  color: white;
+  box-shadow: 0 10px 30px rgba(198, 162, 102, 0.2);
+}
+
+.btn-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: -1;
+}
+
+.btn-premium-send:hover .btn-overlay {
+  left: 0;
+}
+
+/* =========================================
+   3. Map & Success Message
+   ========================================= */
+
+.grayscale-map {
+  filter: grayscale(1) contrast(1.2) invert(0.9) opacity(0.5);
+  transition: all 1s ease;
+}
+
+.grayscale-map:hover {
+  filter: grayscale(0.2) contrast(1) invert(0) opacity(1);
+}
+
+.success-message {
+  background: rgba(198, 162, 102, 0.1);
+  color: #c6a266;
+  padding: 16px;
+  font-size: 12px;
+  border: 1px solid rgba(198, 162, 102, 0.3);
+  margin-top: 20px;
+  animation: slideInUp 0.5s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   4. Base Transitions
+   ========================================= */
+
+.reveal,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal {
+  transform: translateY(50px);
+}
+.reveal-left {
+  transform: translateX(-60px);
+}
+.reveal-right {
+  transform: translateX(60px);
+}
+
+.reveal.show,
+.reveal-left.show,
+.reveal-right.show {
+  opacity: 1;
+  transform: translate(0);
+}

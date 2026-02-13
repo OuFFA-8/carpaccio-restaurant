@@ -2,70 +2,80 @@
   id="home"
   class="relative h-screen w-full flex items-center justify-center overflow-hidden font-sans"
 >
-  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-0 scale-110 animate-slow-zoom"
+  >
     <source src="/images/3196344-uhd_3840_2160_25fps.mp4" type="video/mp4" />
   </video>
 
-  <div class="absolute inset-0 bg-black/40 z-10"></div>
+  <div class="absolute inset-0 bg-black/50 z-10"></div>
 
-  <div class="relative z-20 text-center text-white px-4 animate-fade-in-up">
+  <div class="relative z-20 text-center text-white px-4">
     <h1
-      class="text-6xl md:text-8xl lg:text-9xl font-serif italic mb-4 tracking-tighter drop-shadow-lg text-white uppercase"
+      class="text-6xl md:text-8xl lg:text-9xl font-serif italic mb-4 tracking-tighter drop-shadow-2xl text-white uppercase animate-reveal-title"
     >
       Carpaccio
     </h1>
     <p
-      class="text-sm md:text-xl lg:text-2xl font-light tracking-[0.3em] md:tracking-[0.4em] uppercase text-[#c6a266] mb-10"
+      class="text-sm md:text-xl lg:text-2xl font-light tracking-[0.3em] md:tracking-[0.4em] uppercase text-[#c6a266] mb-10 animate-reveal-sub"
     >
       The Essence of Italian Taste
     </p>
 
     <a
       routerLink="/menu"
-      class="inline-block px-8 py-3 md:px-10 md:py-4 border border-white/30 text-white hover:bg-[#c6a266] hover:border-[#c6a266] hover:text-black transition-all duration-500 text-[10px] md:text-xs tracking-widest uppercase cursor-pointer"
+      class="reveal inline-block px-8 py-3 md:px-10 md:py-4 border border-white/30 text-white hover:bg-[#c6a266] hover:border-[#c6a266] hover:text-black transition-all duration-700 text-[10px] md:text-xs tracking-widest uppercase cursor-pointer backdrop-blur-sm"
     >
       Explore the Menu
     </a>
   </div>
 
-  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce hidden md:block">
-    <div class="w-[1px] h-16 bg-gradient-to-b from-[#c6a266] to-transparent"></div>
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden md:block opacity-50">
+    <div class="scroll-line"></div>
   </div>
 </section>
 
-<section id="about" class="bg-[#0a0a0a] py-16 md:py-24 px-6 md:px-20 overflow-hidden">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-    <div class="order-2 lg:order-1 relative group mx-auto lg:mx-0 max-w-md lg:max-w-full">
-      <img
-        src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800"
-        class="rounded-sm shadow-2xl grayscale group-hover:grayscale-0 transition duration-1000 relative z-10"
-        alt="Chef Craft"
-      />
+<section id="about" class="bg-[#0a0a0a] py-20 md:py-32 px-6 md:px-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal-left order-2 lg:order-1 relative group mx-auto lg:mx-0">
+      <div class="relative z-10 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800"
+          class="rounded-sm shadow-2xl grayscale group-hover:grayscale-0 transition duration-1000"
+          alt="Chef Craft"
+        />
+      </div>
       <div
-        class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#c6a266] z-0"
+        class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#c6a266] z-0 opacity-40 group-hover:w-32 group-hover:h-32 transition-all duration-700"
       ></div>
       <div
-        class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-[#c6a266] z-0"
+        class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-[#c6a266] z-0 opacity-40 group-hover:w-32 group-hover:h-32 transition-all duration-700"
       ></div>
     </div>
 
-    <div class="order-1 lg:order-2 text-center lg:text-right" dir="rtl">
-      <span class="text-[#c6a266] font-serif italic text-xl md:text-2xl block mb-2">قصتنا</span>
+    <div class="reveal-right order-1 lg:order-2 text-center lg:text-right" dir="rtl">
+      <span class="text-[#c6a266] font-serif italic text-xl md:text-2xl block mb-4 tracking-widest"
+        >قصتنا</span
+      >
       <h2
-        class="text-white text-3xl md:text-5xl font-bold mb-6 tracking-tight font-serif leading-tight"
+        class="text-white text-4xl md:text-6xl font-bold mb-8 tracking-tight font-serif leading-tight"
       >
         فن تقديم الطعام <br />
-        بلمسة إيطالية
+        <span class="italic text-[#c6a266]">بلمسة إيطالية</span>
       </h2>
       <p
-        class="text-gray-400 text-sm md:text-lg leading-loose mb-8 font-light max-w-2xl mx-auto lg:mr-0"
+        class="text-gray-400 text-base md:text-xl leading-relaxed mb-10 font-light max-w-2xl mx-auto lg:mr-0 italic"
       >
         في "كرباتشيو"، نؤمن أن كل طبق هو لوحة فنية. اسمنا مستوحى من الدقة الإيطالية، ونحن ملتزمون
-        بتقديم تجربة طعام فريدة تجمع بين المكونات الطازجة وأسرار الطهي التقليدية. من مقبلاتنا
-        الباردة وصولاً إلى أطباق الشيف الخاصة.
+        بتقديم تجربة طعام فريدة تجمع بين المكونات الطازجة وأسرار الطهي التقليدية.
       </p>
       <button
-        class="text-white border-b border-[#c6a266] pb-1 hover:text-[#c6a266] transition-colors duration-300 tracking-[0.2em] uppercase text-xs"
+        routerLink="/about"
+        class="text-[#c6a266] border-b border-[#c6a266]/30 pb-2 hover:border-[#c6a266] transition-all duration-300 tracking-[0.3em] uppercase text-[10px] font-bold"
       >
         Read Our Full Story
       </button>
@@ -73,36 +83,35 @@
   </div>
 </section>
 
-<section id="menu" class="bg-black py-20 md:py-24">
-  <div class="text-center mb-12 md:mb-16 px-4">
-    <h2 class="text-white text-4xl md:text-6xl font-serif italic mb-4">The Selection</h2>
-    <div class="w-24 h-[2px] bg-[#c6a266] mx-auto"></div>
-    <p class="text-gray-500 mt-4 text-xs uppercase tracking-widest">
-      Discover our signature dishes
-    </p>
+<section id="menu-grid" class="bg-black py-24">
+  <div class="reveal text-center mb-16 px-4">
+    <h2 class="text-white text-5xl md:text-7xl font-serif italic mb-6">The Selection</h2>
+    <div class="w-24 h-[1px] bg-[#c6a266] mx-auto opacity-50"></div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
-    @for (cat of categories; track cat.id) {
-      <div class="group relative h-[350px] md:h-[450px] overflow-hidden cursor-pointer">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-2">
+    @for (cat of categories; track cat.id; let i = $index) {
+      <div
+        class="reveal group relative h-[400px] md:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
+        [style.transition-delay]="i * 0.15 + 's'"
+      >
         <img
           [src]="cat.img"
-          class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition duration-1000 ease-in-out"
+          class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-90 transition duration-[2s] ease-in-out"
         />
-
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
         <div
-          class="absolute bottom-8 right-6 text-right transform group-hover:-translate-y-2 transition duration-500"
+          class="absolute bottom-10 right-8 text-right transform group-hover:-translate-y-4 transition duration-700"
         >
-          <p class="text-[#c6a266] font-serif italic text-sm md:text-base mb-1">{{ cat.it }}</p>
-          <h3 class="text-white text-2xl md:text-3xl font-bold tracking-wide uppercase font-serif">
+          <p class="text-[#c6a266] font-serif italic text-base mb-2 tracking-widest">
+            {{ cat.it }}
+          </p>
+          <h3 class="text-white text-3xl md:text-4xl font-bold tracking-tight uppercase font-serif">
             {{ cat.ar }}
           </h3>
         </div>
-
         <div
-          class="absolute inset-0 border-[0px] group-hover:border-[10px] border-[#c6a266]/30 transition-all duration-500"
+          class="absolute inset-0 border border-white/0 group-hover:border-[#c6a266]/20 transition-all duration-700 m-4"
         ></div>
       </div>
     }
@@ -110,27 +119,29 @@
 </section>
 
 <section
-  class="relative h-[500px] md:h-[600px] flex items-center justify-center md:justify-end px-6 md:px-24 overflow-hidden"
+  class="reveal relative h-[600px] md:h-[750px] flex items-center justify-center md:justify-end px-6 md:px-32 overflow-hidden"
 >
   <img
     src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?q=80&w=1200"
-    class="absolute inset-0 w-full h-full object-cover opacity-50"
+    class="absolute inset-0 w-full h-full object-cover scale-105"
   />
-
   <div
-    class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black via-black/50 to-transparent"
+    class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-black via-black/80 to-transparent"
   ></div>
 
-  <div class="relative z-10 max-w-lg text-center md:text-right" dir="rtl">
-    <h2 class="text-[#c6a266] font-serif italic text-2xl md:text-3xl mb-2">الأجواء</h2>
-    <h3 class="text-white text-4xl md:text-6xl font-bold mb-6 italic font-serif">ركن الأراجيل</h3>
-    <p class="text-gray-200 text-sm md:text-lg leading-loose mb-8 font-light">
+  <div class="relative z-10 max-w-xl text-center md:text-right" dir="rtl">
+    <h2 class="text-[#c6a266] font-serif italic text-2xl md:text-3xl mb-4 tracking-widest">
+      الأجواء
+    </h2>
+    <h3 class="text-white text-5xl md:text-7xl font-bold mb-8 italic font-serif leading-tight">
+      ركن الأراجيل
+    </h3>
+    <p class="text-gray-300 text-base md:text-xl leading-relaxed mb-10 font-light italic">
       استمتع بأمسية هادئة في ركن الأراجيل الخاص بنا، حيث الأجواء الراقية والخدمة المميزة التي تليق
       بك، مع تشكيلة فاخرة من النكهات.
     </p>
-
     <button
-      class="px-8 py-3 bg-[#c6a266] text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition duration-300"
+      class="px-12 py-4 bg-[#c6a266] text-black text-[10px] font-black uppercase tracking-[0.4em] hover:bg-white transition-all duration-500 shadow-xl"
     >
       احجز طاولتك الآن
     </button>

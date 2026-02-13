@@ -1,0 +1,89 @@
+/* =========================================
+   1. Scroll Reveal Animations
+   ========================================= */
+
+/* ظهور من الأسفل (للعنوان) */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(5px);
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* ظهور من اليسار (للصور) */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  filter: blur(5px);
+  transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* ظهور من اليمين (للنصوص) */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  filter: blur(5px);
+  transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* حالة التفعيل */
+.reveal.show,
+.reveal-left.show,
+.reveal-right.show {
+  opacity: 1;
+  transform: translate(0);
+  filter: blur(0);
+}
+
+/* =========================================
+   2. Floating Animation (للصورة الصغيرة)
+   ========================================= */
+.float-animation {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  } /* تطلع لفوق 10 بكسل */
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* =========================================
+   3. Secret Offer Fade In
+   ========================================= */
+.animate-fade-in {
+  animation: fadeInOffer 0.6s ease-out forwards;
+}
+
+@keyframes fadeInOffer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   4. Mobile Adjustments
+   ========================================= */
+@media (max-width: 768px) {
+  /* في الموبايل، نقلل المسافة عشان ميحصلش Horizontal Scroll */
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(30px); /* نحولها لحركة رأسية أفضل للموبايل */
+  }
+
+  .reveal-left.show,
+  .reveal-right.show {
+    transform: translateY(0);
+  }
+}

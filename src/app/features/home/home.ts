@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {
+export class Home implements AfterViewInit {
   categories = [
     {
       id: 1,
@@ -34,4 +36,29 @@ export class Home {
       img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=500',
     },
   ];
+
+  constructor(
+    private el: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: Object,
+  ) {}
+
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      const elements = this.el.nativeElement.querySelectorAll(
+        '.reveal, .reveal-left, .reveal-right',
+      );
+      elements.forEach((el: HTMLElement) => observer.observe(el));
+    }
+  }
 }

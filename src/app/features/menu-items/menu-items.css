@@ -1,0 +1,78 @@
+/* =========================================
+   1. الخطوط والمتغيرات
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --gold: #c6a266;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif !important;
+}
+
+body {
+  font-family: 'Alexandria', sans-serif;
+}
+
+/* =========================================
+   2. أنيميشن الظهور (Scroll Reveal)
+   ========================================= */
+
+/* الحالة المخفية */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(5px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+/* الحالة الظاهرة */
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* زر العودة يدخل من اليمين */
+.fade-right {
+  transform: translateX(20px);
+}
+.reveal.show.fade-right {
+  transform: translateX(0);
+}
+
+/* =========================================
+   3. تنسيق الكروت (Item Cards)
+   ========================================= */
+
+/* تحسين استجابة اللمس في الموبايل */
+@media (max-width: 768px) {
+  .item-card:active {
+    transform: scale(0.98);
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  /* في الموبايل نلغي الـ Grayscale عشان الصورة تبقى واضحة دايماً */
+  .item-card img {
+    filter: grayscale(0) !important;
+  }
+}
+
+/* خط فاصل أنيق بين العناصر */
+.item-card {
+  position: relative;
+}
+
+/* =========================================
+   4. Loading Spinner
+   ========================================= */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
