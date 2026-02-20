@@ -1,12 +1,13 @@
 @import 'tailwindcss';
 
-/* الكلام العربي (أسماء الأطباق والوصف) */
 body,
 h1,
 h4,
 p,
 h2,
 h3,
+h5,
+h6,
 .font-serif,
 .font-serif.italic {
   font-family: 'Alexandria', sans-serif !important;
@@ -33,12 +34,12 @@ html {
 @layer components {
   .nav-link {
     @apply transition-all duration-300 cursor-pointer hover:text-[#c6a266] relative;
-    display: inline-block; /* ضفنا دي هنا عشان الهوفر والخط يظبطوا */
+    display: inline-block;
   }
 
   .active-link {
     color: #c6a266 !important;
-    position: relative; /* مهم جداً */
+    position: relative;
     display: inline-block;
   }
 
