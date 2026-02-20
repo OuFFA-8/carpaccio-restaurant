@@ -1,15 +1,36 @@
 <section
   class="min-h-screen bg-[#050505] text-white pt-24 pb-20 px-4 md:px-10 font-sans overflow-x-hidden"
 >
-  <div class="max-w-7xl mx-auto mb-10 reveal fade-right">
+  <div class="max-w-7xl mx-auto mb-10 reveal fade-right relative z-10">
     <a
       routerLink="/menu"
-      class="inline-flex items-center text-[#c6a266] hover:text-white transition-colors duration-300 gap-3 cursor-pointer group py-2"
+      class="custom-back-btn inline-flex items-center gap-4 group cursor-pointer py-4"
+      [class.flex-row-reverse]="translate.currentLang === 'en'"
     >
-      <span class="text-2xl transform group-hover:-translate-x-2 transition-transform duration-300"
-        >←</span
+      <span
+        class="text-[11px] uppercase tracking-[0.25em] font-bold text-[#c6a266] group-hover:text-white transition-colors duration-300"
       >
-      <span class="text-[10px] uppercase tracking-[0.2em] font-bold">العودة للأقسام</span>
+        {{ 'ITEMS.BACK_TO_CATEGORIES' | translate }}
+      </span>
+      <div
+        class="w-10 h-10 rounded-full border border-[#c6a266]/40 flex items-center justify-center group-hover:border-[#c6a266] group-hover:bg-[#c6a266] transition-all duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-5 h-5 text-[#c6a266] group-hover:text-black transition-colors duration-300"
+          [class.rotate-180]="translate.currentLang === 'ar'"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+          />
+        </svg>
+      </div>
     </a>
   </div>
 
@@ -18,12 +39,12 @@
       <h2
         class="text-[#c6a266] font-serif italic text-xl md:text-2xl mb-3 tracking-widest opacity-80"
       >
-        {{ currentCategory.it }}
+        {{ translate.currentLang === 'en' ? currentCategory.ar : currentCategory.it }}
       </h2>
       <h1
         class="text-4xl md:text-6xl font-bold font-serif uppercase tracking-tight text-white drop-shadow-lg"
       >
-        {{ currentCategory.ar }}
+        {{ translate.currentLang === 'en' ? currentCategory.it : currentCategory.ar }}
       </h1>
       <div
         class="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#c6a266] to-transparent mx-auto mt-8"
@@ -50,48 +71,55 @@
 
           @if (item.isSignature) {
             <span
-              class="absolute top-3 right-3 bg-[#c6a266] text-black text-[9px] font-black px-3 py-1 uppercase tracking-widest shadow-md"
+              class="absolute top-3 end-3 bg-[#c6a266] text-black text-[9px] font-black px-3 py-1 uppercase tracking-widest shadow-md"
             >
               Signature
             </span>
           }
         </div>
 
-        <div class="flex-1 text-right flex flex-col justify-between" dir="rtl">
+        <div class="flex-1 flex flex-col justify-between text-start">
           <div>
-            <div class="flex justify-between items-start mb-2 pl-2">
+            <div class="flex justify-between items-start mb-2">
               <h3
                 class="text-xl md:text-2xl font-bold font-serif text-white group-hover:text-[#c6a266] transition-colors duration-300 leading-tight"
               >
-                {{ item.ar }}
+                {{ translate.currentLang === 'en' ? item.it : item.ar }}
               </h3>
               <span
-                class="text-[#c6a266] text-xl font-light whitespace-nowrap mr-4 flex items-start gap-1"
+                class="text-[#c6a266] text-xl font-light whitespace-nowrap flex items-start gap-1"
+                [class.mr-4]="translate.currentLang === 'ar'"
+                [class.ml-4]="translate.currentLang === 'en'"
               >
                 {{ item.price }} <small class="text-xs mt-1">₪</small>
               </span>
             </div>
 
-            <span
-              class="block text-gray-500 text-xs italic font-serif mb-4 tracking-wider"
-              dir="ltr"
-              >{{ item.it }}</span
-            >
+            <span class="block text-gray-500 text-xs italic font-serif mb-4 tracking-wider">
+              {{ translate.currentLang === 'en' ? item.ar : item.it }}
+            </span>
 
             <p
               class="text-gray-400 text-sm font-light leading-relaxed group-hover:text-gray-300 transition-colors"
             >
-              {{ item.description }}
+              {{
+                translate.currentLang === 'en'
+                  ? item.enDescription || item.description
+                  : item.description
+              }}
             </p>
           </div>
 
-          <div
+          <!-- <div
             class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2 group-hover:translate-y-0"
           >
-            <span class="text-[#c6a266] text-[10px] border-b border-[#c6a266] pb-0.5 cursor-pointer"
-              >المزيد من التفاصيل</span
+            <a
+              [routerLink]="['/menu/item', item.id]"
+              class="text-[#c6a266] text-[10px] border-b border-[#c6a266] pb-0.5 cursor-pointer uppercase tracking-widest"
             >
-          </div>
+              {{ 'ITEMS.VIEW_DETAILS' | translate }}
+            </a>
+          </div> -->
         </div>
       </div>
     } @empty {
@@ -100,7 +128,7 @@
           class="inline-block w-16 h-16 border-2 border-[#c6a266] border-t-transparent rounded-full animate-spin mb-6"
         ></div>
         <p class="text-gray-400 text-lg font-serif italic tracking-widest">
-          جاري تحضير أطباق هذا القسم...
+          {{ 'ITEMS.LOADING' | translate }}
         </p>
       </div>
     }

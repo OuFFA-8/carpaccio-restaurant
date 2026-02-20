@@ -18,19 +18,19 @@
     <h1
       class="text-6xl md:text-8xl lg:text-9xl font-serif italic mb-4 tracking-tighter drop-shadow-2xl text-white uppercase animate-reveal-title"
     >
-      Carpaccio
+      {{ 'HOME.HERO.TITLE' | translate }}
     </h1>
     <p
       class="text-sm md:text-xl lg:text-2xl font-light tracking-[0.3em] md:tracking-[0.4em] uppercase text-[#c6a266] mb-10 animate-reveal-sub"
     >
-      The Essence of Italian Taste
+      {{ 'HOME.HERO.SUBTITLE' | translate }}
     </p>
 
     <a
       routerLink="/menu"
       class="reveal inline-block px-8 py-3 md:px-10 md:py-4 border border-white/30 text-white hover:bg-[#c6a266] hover:border-[#c6a266] hover:text-black transition-all duration-700 text-[10px] md:text-xs tracking-widest uppercase cursor-pointer backdrop-blur-sm"
     >
-      Explore the Menu
+      {{ 'HOME.HERO.CTA' | translate }}
     </a>
   </div>
 
@@ -57,27 +57,26 @@
       ></div>
     </div>
 
-    <div class="reveal-right order-1 lg:order-2 text-center lg:text-right" dir="rtl">
-      <span class="text-[#c6a266] font-serif italic text-xl md:text-2xl block mb-4 tracking-widest"
-        >قصتنا</span
-      >
+    <div class="reveal-right order-1 lg:order-2 text-center lg:text-start">
+      <span class="text-[#c6a266] font-serif italic text-xl md:text-2xl block mb-4 tracking-widest">
+        {{ 'HOME.ABOUT.TAGLINE' | translate }}
+      </span>
       <h2
         class="text-white text-4xl md:text-6xl font-bold mb-8 tracking-tight font-serif leading-tight"
       >
-        فن تقديم الطعام <br />
-        <span class="italic text-[#c6a266]">بلمسة إيطالية</span>
+        {{ 'HOME.ABOUT.TITLE_1' | translate }} <br />
+        <span class="italic text-[#c6a266]">{{ 'HOME.ABOUT.TITLE_2' | translate }}</span>
       </h2>
       <p
         class="text-gray-400 text-base md:text-xl leading-relaxed mb-10 font-light max-w-2xl mx-auto lg:mr-0 italic"
       >
-        في "كرباتشيو"، نؤمن أن كل طبق هو لوحة فنية. اسمنا مستوحى من الدقة الإيطالية، ونحن ملتزمون
-        بتقديم تجربة طعام فريدة تجمع بين المكونات الطازجة وأسرار الطهي التقليدية.
+        {{ 'HOME.ABOUT.DESCRIPTION' | translate }}
       </p>
       <button
         routerLink="/about"
         class="text-[#c6a266] border-b border-[#c6a266]/30 pb-2 hover:border-[#c6a266] transition-all duration-300 tracking-[0.3em] uppercase text-[10px] font-bold"
       >
-        Read Our Full Story
+        {{ 'HOME.ABOUT.CTA' | translate }}
       </button>
     </div>
   </div>
@@ -85,11 +84,16 @@
 
 <section id="menu-grid" class="bg-black py-24">
   <div class="reveal text-center mb-16 px-4">
-    <h2 class="text-white text-5xl md:text-7xl font-serif italic mb-6">The Selection</h2>
+    <h2 class="text-white text-5xl md:text-7xl font-serif italic mb-6">
+      {{ 'HOME.MENU.TITLE' | translate }}
+    </h2>
     <div class="w-24 h-[1px] bg-[#c6a266] mx-auto opacity-50"></div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-2">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-2"
+    [attr.dir]="translate.currentLang === 'ar' ? 'rtl' : 'ltr'"
+  >
     @for (cat of categories; track cat.id; let i = $index) {
       <div
         [routerLink]="['/menu', cat.category, cat.categoryId]"
@@ -100,17 +104,20 @@
           [src]="cat.img"
           class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-90 transition duration-[2s] ease-in-out"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
         <div
-          class="absolute bottom-10 right-8 text-right transform group-hover:-translate-y-4 transition duration-700"
+          class="absolute bottom-10 start-8 text-start transform group-hover:-translate-y-4 transition duration-700"
         >
           <p class="text-[#c6a266] font-serif italic text-base mb-2 tracking-widest">
             {{ cat.it }}
           </p>
           <h3 class="text-white text-3xl md:text-4xl font-bold tracking-tight uppercase font-serif">
-            {{ cat.ar }}
+            {{ translate.currentLang === 'en' ? cat.it : cat.ar }}
           </h3>
         </div>
+
         <div
           class="absolute inset-0 border border-white/0 group-hover:border-[#c6a266]/20 transition-all duration-700 m-4"
         ></div>
@@ -127,25 +134,28 @@
     class="absolute inset-0 w-full h-full object-cover scale-105"
   />
   <div
-    class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-black via-black/80 to-transparent"
+    class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"
+    [class.md:bg-gradient-to-l]="translate.currentLang === 'ar'"
+    [class.md:bg-gradient-to-r]="translate.currentLang === 'en'"
   ></div>
 
-  <div class="relative z-10 max-w-xl text-center md:text-right" dir="rtl">
+  <div class="relative z-10 max-w-xl w-full text-start flex flex-col">
     <h2 class="text-[#c6a266] font-serif italic text-2xl md:text-3xl mb-4 tracking-widest">
-      الأجواء
+      {{ 'HOME.SHISHA.TAGLINE' | translate }}
     </h2>
     <h3 class="text-white text-5xl md:text-7xl font-bold mb-8 italic font-serif leading-tight">
-      ركن الأراجيل
+      {{ 'HOME.SHISHA.TITLE' | translate }}
     </h3>
     <p class="text-gray-300 text-base md:text-xl leading-relaxed mb-10 font-light italic">
-      استمتع بأمسية هادئة في ركن الأراجيل الخاص بنا، حيث الأجواء الراقية والخدمة المميزة التي تليق
-      بك، مع تشكيلة فاخرة من النكهات.
+      {{ 'HOME.SHISHA.DESCRIPTION' | translate }}
     </p>
-    <button
-      routerLink="category/shisha"
-      class="px-12 py-4 bg-[#c6a266] text-blacsk text-[10px] font-black uppercase tracking-[0.4em] hover:bg-white transition-all duration-500 shadow-xl"
-    >
-      احجز طاولتك الآن
-    </button>
+    <div class="flex">
+      <button
+        routerLink="category/shisha"
+        class="px-12 py-4 bg-[#c6a266] text-black text-[10px] font-black uppercase tracking-[0.4em]"
+      >
+        {{ 'HOME.SHISHA.CTA' | translate }}
+      </button>
+    </div>
   </div>
 </section>

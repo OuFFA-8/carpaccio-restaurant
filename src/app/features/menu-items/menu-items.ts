@@ -2,11 +2,12 @@ import { Component, OnInit, AfterViewInit, ElementRef, Inject, PLATFORM_ID } fro
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { MenuItem, Category, MenuServices } from '../../core/services/menu-services/menu-services';
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu-items',
   standalone: true,
-  imports: [RouterLink], // مهم جداً عشان زرار "العودة" يشتغل
+  imports: [RouterLink, TranslatePipe, TranslateModule], // مهم جداً عشان زرار "العودة" يشتغل
   templateUrl: './menu-items.html',
   styleUrl: './menu-items.css',
 })
@@ -19,6 +20,7 @@ export class MenuItems implements OnInit, AfterViewInit {
     private menuService: MenuServices,
     private el: ElementRef,
     @Inject(PLATFORM_ID) private platformId: Object,
+    public translate: TranslateService,
   ) {}
 
   ngOnInit() {

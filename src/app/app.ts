@@ -1,7 +1,9 @@
-import { Component, signal, HostListener } from '@angular/core';
+import { Component, signal, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { Header } from './shared/components/header/header';
 import { Footer } from './shared/components/footer/footer';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +12,33 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('carpaccio');
   isScrolled = false;
 
+  constructor(
+    private translate: TranslateService,
+    @Inject(PLATFORM_ID) private platformId: Object,
+  ) {
+    // إعداد اللغة الافتراضية
+    this.translate.setDefaultLang('ar');
+    this.useLanguage('ar');
+  }
+
+  // فنكشن تبديل اللغة وتغيير اتجاه الصفحة (RTL/LTR)
+  useLanguage(lang: string) {
+    this.translate.use(lang);
+    if (isPlatformBrowser(this.platformId)) {
+      const direction = lang === 'ar' ? 'rtl' : 'ltr';
+      document.documentElement.dir = direction;
+      document.documentElement.lang = lang;
+    }
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.isScrolled = window.scrollY > 50;
+    }
+  }
   // قائمة الأصناف اللي بعتها يا زميلي
   menuCategories = [
     {
@@ -46,10 +72,4 @@ export class App {
       img: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=500',
     },
   ];
-
-  // فنكشن عشان نغير شكل النافبار لما ننزل بالماوس
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.isScrolled = window.scrollY > 50;
-  }
 }

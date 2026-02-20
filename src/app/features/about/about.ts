@@ -1,10 +1,11 @@
 import { Component, AfterViewInit, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser, CommonModule } from '@angular/common'; // CommonModule عشان @if
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe, TranslateModule],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
@@ -14,10 +15,11 @@ export class About implements AfterViewInit {
   constructor(
     private el: ElementRef,
     @Inject(PLATFORM_ID) private platformId: Object,
+    public translate: TranslateService,
   ) {}
 
   toggleOffer() {
-    this.showSecretOffer = true;
+    this.showSecretOffer = !this.showSecretOffer;
   }
 
   ngAfterViewInit() {

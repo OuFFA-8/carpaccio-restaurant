@@ -1,11 +1,12 @@
 import { Component, AfterViewInit, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe, TranslateModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -49,6 +50,7 @@ export class Home implements AfterViewInit {
   constructor(
     private el: ElementRef,
     @Inject(PLATFORM_ID) private platformId: Object,
+    public translate: TranslateService,
   ) {}
 
   ngAfterViewInit() {

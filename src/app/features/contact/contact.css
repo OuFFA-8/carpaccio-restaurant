@@ -138,3 +138,6 @@
   opacity: 1;
   transform: translate(0);
 }
+[dir='rtl'] p[style*='direction: ltr'] {
+  text-align: right;
+}

@@ -3,18 +3,16 @@
   class="bg-[#050505] text-white pt-16 md:pt-24 pb-10 border-t border-white/5 font-sans"
 >
   <div
-    class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-right"
-    dir="rtl"
+    class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-start"
   >
     <div class="space-y-6">
       <h2
-        class="text-3xl font-serif tracking-tighter border-r-4 border-[#c6a266] pr-4 text-white uppercase"
+        class="text-3xl font-serif tracking-tighter border-s-4 border-[#c6a266] ps-4 text-white uppercase"
       >
         CARPACCIO
       </h2>
-      <p class="text-gray-400 text-sm leading-relaxed font-light font-cairo">
-        نحن نؤمن أن الطعام هو لغة الحب العالمية. في كرباتشيو أريحا، نجمع بين عراقة التاريخ الفلسطيني
-        والتقاليد الإيطالية لنقدم لك تجربة لا تُنسى.
+      <p class="text-gray-400 text-sm leading-relaxed font-light">
+        {{ 'FOOTER.ABOUT_TEXT' | translate }}
       </p>
 
       <div class="flex justify-start gap-4 pt-2">
@@ -40,69 +38,69 @@
     </div>
 
     <div class="space-y-6">
-      <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-[#c6a266] font-cairo">
-        روابط سريعة
+      <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-[#c6a266]">
+        {{ 'FOOTER.QUICK_LINKS.TITLE' | translate }}
       </h4>
-      <ul class="space-y-4 text-gray-400 text-sm font-light font-cairo">
+      <ul class="space-y-4 text-gray-400 text-sm font-light">
         <li>
           <a
             routerLink="/home"
             class="hover:text-[#c6a266] transition-all duration-300 cursor-pointer block"
-            >الرئيسية</a
+            >{{ 'NAV.HOME' | translate }}</a
           >
         </li>
         <li>
           <a
             routerLink="/about"
             class="hover:text-[#c6a266] transition-all duration-300 cursor-pointer block"
-            >قصتنا</a
+            >{{ 'NAV.ABOUT' | translate }}</a
           >
         </li>
         <li>
           <a
             routerLink="/menu"
             class="hover:text-[#c6a266] transition-all duration-300 cursor-pointer block"
-            >قائمة الطعام</a
+            >{{ 'NAV.MENU' | translate }}</a
           >
         </li>
         <li>
           <a
             routerLink="/contact"
             class="hover:text-[#c6a266] transition-all duration-300 cursor-pointer block"
-            >اتصل بنا</a
+            >{{ 'NAV.CONTACT' | translate }}</a
           >
         </li>
       </ul>
     </div>
 
     <div class="space-y-6">
-      <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-[#c6a266] font-cairo">
-        ساعات العمل
+      <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-[#c6a266]">
+        {{ 'FOOTER.HOURS.TITLE' | translate }}
       </h4>
-      <ul class="space-y-4 text-gray-400 text-[13px] font-light font-cairo">
+      <ul class="space-y-4 text-gray-400 text-[13px] font-light">
         <li class="flex justify-between border-b border-white/5 pb-2">
-          <span>السبت - الخميس:</span>
-          <span class="text-white dir-ltr">12:00 PM - 12:00 AM</span>
+          <span>{{ 'FOOTER.HOURS.WEEK' | translate }}</span>
+          <span class="text-white" dir="ltr">12:00 PM - 12:00 AM</span>
         </li>
         <li class="flex justify-between border-b border-white/5 pb-2">
-          <span>يوم الجمعة:</span>
-          <span class="text-white dir-ltr">02:00 PM - 01:00 AM</span>
+          <span>{{ 'FOOTER.HOURS.FRIDAY' | translate }}</span>
+          <span class="text-white" dir="ltr">02:00 PM - 01:00 AM</span>
         </li>
         <li class="flex justify-between pt-2">
-          <span class="text-[#c6a266]">أجواء الأراجيل:</span>
-          <span class="text-white">متوفرة يومياً</span>
+          <span class="text-[#c6a266]">{{ 'FOOTER.HOURS.SHISHA' | translate }}</span>
+          <span class="text-white">{{ 'FOOTER.HOURS.DAILY' | translate }}</span>
         </li>
       </ul>
     </div>
 
     <div class="space-y-6">
-      <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-[#c6a266] font-cairo">
-        تواصل معنا
+      <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-[#c6a266]">
+        {{ 'FOOTER.CONTACT.TITLE' | translate }}
       </h4>
-      <div class="space-y-5 text-gray-400 text-sm font-light font-cairo">
+      <div class="space-y-5 text-gray-400 text-sm font-light">
         <div class="flex items-start gap-4">
           <span class="text-[#c6a266] text-lg">📍</span>
-          <p class="leading-relaxed">فلسطين، أريحا<br />شارع قصر هشام، وسط المدينة</p>
+          <p class="leading-relaxed">{{ 'FOOTER.CONTACT.ADDRESS' | translate }}</p>
         </div>
         <div class="flex items-center gap-4 group">
           <span class="text-[#c6a266] text-lg">📞</span>
@@ -110,9 +108,8 @@
             href="tel:+970599000000"
             dir="ltr"
             class="group-hover:text-white transition cursor-pointer font-sans tracking-widest text-[15px]"
+            >+970 599 000 000</a
           >
-            +970 599 000 000
-          </a>
         </div>
         <div class="flex items-center gap-4 group">
           <span class="text-[#c6a266] text-lg">✉️</span>
@@ -127,11 +124,12 @@
   </div>
 
   <div
-    class="max-w-7xl mx-auto px-6 mt-16 md:mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-cairo"
+    class="max-w-7xl mx-auto px-6 mt-16 md:mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-[9px] md:text-[10px] uppercase tracking-[0.2em]"
   >
-    <p>© 2026 Carpaccio Jericho. All rights reserved.</p>
+    <p>© 2026 Carpaccio Jericho. {{ 'FOOTER.RIGHTS' | translate }}</p>
     <p class="flex items-center gap-2">
-      Made with <span class="text-[#c6a266] animate-pulse">♥</span> in Palestine
+      {{ 'FOOTER.MADE_WITH' | translate }} <span class="text-[#c6a266] animate-pulse">♥</span>
+      {{ 'FOOTER.IN_PALESTINE' | translate }}
     </p>
   </div>
 </footer>

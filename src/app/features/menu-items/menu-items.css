@@ -76,3 +76,39 @@ body {
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+.custom-back-btn {
+  /* تضمن أن الرابط يغطي كل محتوياته */
+  display: inline-flex !important;
+  align-items: center;
+  pointer-events: auto; /* التأكد أن العنصر يستقبل النقرات */
+  user-select: none;
+  position: relative;
+}
+
+/* حركة بسيطة للسهم للأمام والخلف عند الهوفر */
+.custom-back-btn:hover svg {
+  animation: moveArrow 0.6s infinite alternate;
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-4px);
+  }
+}
+
+/* تعديل الاتجاه في الإنجليزية */
+[dir='ltr'] .custom-back-btn:hover svg {
+  animation: moveArrowEn 0.6s infinite alternate;
+}
+
+@keyframes moveArrowEn {
+  from {
+    transform: translateX(0) rotate(180deg);
+  }
+  to {
+    transform: translateX(4px) rotate(180deg);
+  }
+}

@@ -1,15 +1,19 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu-details',
-  imports: [],
+  imports: [TranslatePipe, TranslateModule],
   templateUrl: './menu-details.html',
   styleUrl: './menu-details.css',
 })
 export class MenuDetails implements OnInit {
-  private route = inject(ActivatedRoute);
   item: any = null;
+  constructor(
+    private route: ActivatedRoute,
+    public translate: TranslateService,
+  ) {}
 
   fullMenu = [
     // --- قسم الفطور (5 أطباق) ---

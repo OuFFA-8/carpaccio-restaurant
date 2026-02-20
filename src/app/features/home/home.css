@@ -109,3 +109,24 @@
     font-size: 4rem !important;
   }
 }
+/* حل مشكلة المحاذاة في قسم ركن الأراجيل وقصتنا */
+:host-context([dir='rtl']) .text-start {
+  text-align: right !important;
+  align-items: flex-start !important;
+}
+
+:host-context([dir='ltr']) .text-start {
+  text-align: left !important;
+  align-items: flex-start !important;
+}
+
+/* التأكد من أن الحاوية نفسها لا تتوسط الصفحة */
+:host-context([dir='rtl']) .max-w-xl {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+:host-context([dir='ltr']) .max-w-xl {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}

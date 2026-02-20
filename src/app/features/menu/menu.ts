@@ -1,12 +1,13 @@
 import { AfterViewInit, Component, ElementRef, OnInit, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common'; // مهم جداً للـ SSR
+import { isPlatformBrowser } from '@angular/common';
 import { Category, MenuServices } from '../../core/services/menu-services/menu-services';
 import { RouterLink } from '@angular/router';
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
-  standalone: true, // تأكد إنها موجودة لو بتستخدم Standalone
-  imports: [RouterLink],
+  standalone: true,
+  imports: [RouterLink, TranslatePipe, TranslateModule],
   templateUrl: './menu.html',
   styleUrl: './menu.css',
 })
@@ -16,7 +17,8 @@ export class Menu implements OnInit, AfterViewInit {
   constructor(
     private menuService: MenuServices,
     private el: ElementRef,
-    @Inject(PLATFORM_ID) private platformId: Object, // حقن معرف المنصة
+    @Inject(PLATFORM_ID) private platformId: Object,
+    public translate: TranslateService,
   ) {}
 
   ngOnInit() {
@@ -24,21 +26,18 @@ export class Menu implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // التحقق هل الكود يعمل في المتصفح أم على السيرفر
     if (isPlatformBrowser(this.platformId)) {
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add('show');
-              // اختياري: لو عايز الأنميشن يحصل مرة واحدة بس وميتكررش كل شوية
-              // observer.unobserve(entry.target);
             }
           });
         },
         {
           threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px', // هيبدأ الأنميشن قبل ما العنصر يوصل تماماً
+          rootMargin: '0px 0px -50px 0px',
         },
       );
 

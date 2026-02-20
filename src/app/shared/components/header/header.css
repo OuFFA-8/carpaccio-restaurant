@@ -1,0 +1,49 @@
+/* header.css */
+
+.lang-btn {
+  /* الخط والحجم */
+  font-size: 10px;
+  font-weight: 300; /* بديل font-light */
+  letter-spacing: 0.3em; /* بديل tracking-widest */
+  text-transform: uppercase;
+
+  /* الألوان والحالة الافتراضية */
+  color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  /* التموضع والأنيميشن */
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  transition: all 0.5s ease;
+}
+
+/* تأثير الهوفر - تغيير اللون للذهبي */
+.lang-btn:hover {
+  color: #c6a266;
+}
+
+/* الخط السفلي الرفيع (الأنيميشن) */
+.lang-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #c6a266;
+  transition: all 0.5s ease;
+}
+
+.lang-btn:hover::after {
+  width: 100%;
+}
+
+/* تنسيق خاص للغة العربية */
+.lang-btn.font-sans {
+  letter-spacing: normal;
+  font-size: 11px;
+  font-family: sans-serif; /* لضمان نعومة الخط العربي */
+}

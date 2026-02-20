@@ -1,0 +1,105 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "Our Story",
+    "MENU": "Menu",
+    "CONTACT": "Contact Us"
+  },
+  "LANG": {
+    "AR": "العربية",
+    "EN": "English"
+  },
+  "HOME": {
+    "HERO": {
+      "TITLE": "Carpaccio",
+      "SUBTITLE": "The Essence of Italian Taste",
+      "CTA": "Explore the Menu",
+      "CATEGORIES": {
+        "1": "Appetizers",
+        "2": "Pizza",
+        "3": "Pasta",
+        "4": "Desserts"
+      }
+    },
+    "ABOUT": {
+      "TAGLINE": "Our Story",
+      "TITLE_1": "The Art of Plating ",
+      "TITLE_2": "With an Italian Touch",
+      "DESCRIPTION": "At 'Carpaccio', we believe every dish is a masterpiece. Inspired by Italian precision, we are committed to delivering a unique dining experience that combines fresh ingredients with traditional culinary secrets.",
+      "CTA": "Read Our Full Story"
+    },
+    "MENU": {
+      "TITLE": "The Selection"
+    },
+    "SHISHA": {
+      "TAGLINE": "The Ambiance",
+      "TITLE": "Shisha Lounge",
+      "DESCRIPTION": "Enjoy a tranquil evening in our dedicated shisha lounge, featuring sophisticated vibes, premium service, and an exquisite selection of flavors.",
+      "CTA": "Book Your Table Now"
+    }
+  },
+  "FOOTER": {
+    "ABOUT_TEXT": "We believe that food is the universal language of love. At Carpaccio Jericho, we combine Palestinian history with Italian traditions to bring you an unforgettable experience.",
+    "QUICK_LINKS": { "TITLE": "Quick Links" },
+    "HOURS": {
+      "TITLE": "Opening Hours",
+      "WEEK": "Sat - Thu:",
+      "FRIDAY": "Friday:",
+      "SHISHA": "Shisha Vibes:",
+      "DAILY": "Available Daily"
+    },
+    "CONTACT": {
+      "TITLE": "Contact Us",
+      "ADDRESS": "Palestine, Jericho\nHisham's Palace St, City Center"
+    },
+    "RIGHTS": "All rights reserved.",
+    "MADE_WITH": "Made with",
+    "IN_PALESTINE": "in Palestine"
+  },
+  "ABOUT": {
+    "TAGLINE": "About Carpaccio",
+    "STORY_TITLE": "Our Story",
+    "STORY_P1": "It all began in 1995, amidst the ancient alleys of Rome, where Chef Carpaccio learned that the secret of Italian cuisine lies in",
+    "STORY_HIGHLIGHT": "Simplicity & Quality",
+    "STORY_P2": "We don't just offer a menu; we offer a sensory journey starting from hand-picking fresh tomatoes, to our hand-made pasta prepared every morning, reaching our signature luxury Carpaccio servings.",
+    "SECRET_BTN": "Discover Our Secret",
+    "SECRET_TEXT": "\"Since you've read our story, a special welcome appetizer awaits you on your next visit.\""
+  },
+  "CONTACT": {
+    "TAGLINE": "Contact Us",
+    "TITLE": "Get In Touch",
+    "INFO": {
+      "LOCATION_TITLE": "Our Location",
+      "LOCATION_DESC": "Palestine, Jericho\nHisham's Palace St, Tourist Area",
+      "RESERVATION_TITLE": "Reservations",
+      "HOURS_DESC": "Daily: 12:00 PM - 12:00 AM",
+      "SHISHA_TAG": "Shisha vibes & premium flavors are always available"
+    },
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "SUBJECT": "Subject",
+      "MESSAGE": "Your message...",
+      "SUBMIT": "Send Message",
+      "SUCCESS": "Message received! We will contact you shortly."
+    }
+  },
+  "MENU": {
+    "TITLE": "Our Menu",
+    "EXPLORE": "Explore Now"
+  },
+  "DETAILS": {
+    "BACK": "Back to Menu",
+    "PRICE": "Price",
+    "WEIGHT": "Approx. Weight",
+    "INGREDIENTS": "Dish Ingredients",
+    "ORDER_NOW": "Order Now",
+    "BOOK_NOW": "Book Your Table",
+    "COMMITMENT": "At Carpaccio, we are committed to providing an authentic Italian experience; where ingredients are hand-picked and slow-cooked to ensure the highest quality."
+  },
+  "ITEMS": {
+    "BACK_TO_CATEGORIES": "Back to Categories",
+    "VIEW_DETAILS": "View Details",
+    "LOADING": "Preparing the dishes of this section..."
+  }
+}

@@ -20,27 +20,43 @@
     </a>
   </div>
 
-  <ul class="hidden lg:flex text-white items-center gap-10">
-    <li>
-      <a
-        routerLink="/home"
-        routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{ exact: true }"
-        class="nav-link"
-      >
-        Home
-      </a>
-    </li>
-    <li>
-      <a routerLink="/about" routerLinkActive="active-link" class="nav-link"> About </a>
-    </li>
-    <li>
-      <a routerLink="/menu" routerLinkActive="active-link" class="nav-link"> Menu </a>
-    </li>
-    <li>
-      <a routerLink="/contact" routerLinkActive="active-link" class="nav-link"> Contact </a>
-    </li>
-  </ul>
+  <div class="hidden lg:flex items-center gap-8">
+    <ul class="flex text-white items-center gap-10">
+      <li>
+        <a
+          routerLink="/home"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+        >
+          {{ 'NAV.HOME' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active-link" class="nav-link">
+          {{ 'NAV.ABOUT' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/menu" routerLinkActive="active-link" class="nav-link">
+          {{ 'NAV.MENU' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active-link" class="nav-link">
+          {{ 'NAV.CONTACT' | translate }}
+        </a>
+      </li>
+    </ul>
+
+    <div class="flex items-center border-s border-white/10 ps-6 ms-6">
+      @if (translate.currentLang === 'ar') {
+        <button (click)="switchLanguage('en')" class="lang-btn">ENGLISH</button>
+      } @else if (translate.currentLang === 'en') {
+        <button (click)="switchLanguage('ar')" class="lang-btn font-sans">العربية</button>
+      }
+    </div>
+  </div>
 
   <button (click)="toggleMenu()" class="lg:hidden text-white p-2 focus:outline-none z-[70]">
     <div class="w-7 h-5 flex flex-col justify-between items-end">
@@ -74,13 +90,13 @@
     [routerLinkActiveOptions]="{ exact: true }"
     class="mobile-link"
   >
-    Home
+    {{ 'NAV.HOME' | translate }}
   </a>
   <a routerLink="/about" (click)="closeMenu()" routerLinkActive="active-mobile" class="mobile-link">
-    About
+    {{ 'NAV.ABOUT' | translate }}
   </a>
   <a routerLink="/menu" (click)="closeMenu()" routerLinkActive="active-mobile" class="mobile-link">
-    Menu
+    {{ 'NAV.MENU' | translate }}
   </a>
   <a
     routerLink="/contact"
@@ -88,6 +104,23 @@
     routerLinkActive="active-mobile"
     class="mobile-link"
   >
-    Contact
+    {{ 'NAV.CONTACT' | translate }}
   </a>
+
+  <div class="flex items-center gap-6 pt-8 border-t border-white/10 w-1/2 justify-center">
+    <button
+      (click)="switchLanguage('en'); closeMenu()"
+      [class.text-[#c6a266]]="translate.currentLang === 'en'"
+      class="text-white/50 text-sm tracking-widest"
+    >
+      ENGLISH
+    </button>
+    <button
+      (click)="switchLanguage('ar'); closeMenu()"
+      [class.text-[#c6a266]]="translate.currentLang === 'ar'"
+      class="text-white/50 text-sm tracking-widest"
+    >
+      العربية
+    </button>
+  </div>
 </div>
