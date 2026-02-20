@@ -1,23 +1,14 @@
 @import 'tailwindcss';
 
-/* العناوين الكبيرة (Our Menu / Benvenuti) */
-h2,
-h3,
-.font-serif {
-  font-family: 'Playfair Display', serif !important;
-}
-
-/* أسماء الأقسام باللاتيني (It) */
-.font-serif.italic {
-  font-family: 'Cinzel', serif !important;
-  letter-spacing: 2px;
-}
-
 /* الكلام العربي (أسماء الأطباق والوصف) */
 body,
 h1,
 h4,
-p {
+p,
+h2,
+h3,
+.font-serif,
+.font-serif.italic {
   font-family: 'Alexandria', sans-serif !important;
 }
 
