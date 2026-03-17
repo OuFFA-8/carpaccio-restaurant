@@ -20,7 +20,7 @@
     </a>
   </div>
 
-  <div class="hidden lg:flex items-center gap-8">
+  <div class="hidden tablet:flex items-center gap-8">
     <ul class="flex text-white items-center gap-10">
       <li>
         <a
@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <button (click)="toggleMenu()" class="lg:hidden text-white p-2 focus:outline-none z-[70]">
+  <button (click)="toggleMenu()" class="tablet:hidden text-white p-2 focus:outline-none z-[70]">
     <div class="w-7 h-5 flex flex-col justify-between items-end">
       <span
         [class.rotate-45]="isMenuOpen"
@@ -81,7 +81,7 @@
 <div
   [class.translate-x-0]="isMenuOpen"
   [class.translate-x-full]="!isMenuOpen"
-  class="fixed inset-0 z-[55] bg-black/98 transition-transform duration-500 ease-in-out lg:hidden flex flex-col items-center justify-center space-y-8"
+  class="fixed inset-0 z-[55] bg-black/98 transition-transform duration-500 ease-in-out tablet:hidden flex flex-col items-center justify-center space-y-8"
 >
   <a
     routerLink="/home"

@@ -16,32 +16,32 @@
 
   <div class="relative z-20 text-center text-white px-4">
     <h1
-      class="text-6xl md:text-8xl lg:text-9xl font-serif italic mb-4 tracking-tighter drop-shadow-2xl text-white uppercase animate-reveal-title"
+      class="text-6xl tablet:text-8xl lg:text-9xl font-serif italic mb-4 tracking-tighter drop-shadow-2xl text-white uppercase animate-reveal-title"
     >
       {{ 'HOME.HERO.TITLE' | translate }}
     </h1>
     <p
-      class="text-sm md:text-xl lg:text-2xl font-light tracking-[0.3em] md:tracking-[0.4em] uppercase text-[#c6a266] mb-10 animate-reveal-sub"
+      class="text-sm tablet:text-xl lg:text-2xl font-light tracking-[0.3em] tablet:tracking-[0.4em] uppercase text-[#c6a266] mb-10 animate-reveal-sub"
     >
       {{ 'HOME.HERO.SUBTITLE' | translate }}
     </p>
 
     <a
       routerLink="/menu"
-      class="reveal inline-block px-8 py-3 md:px-10 md:py-4 border border-white/30 text-white hover:bg-[#c6a266] hover:border-[#c6a266] hover:text-black transition-all duration-700 text-[10px] md:text-xs tracking-widest uppercase cursor-pointer backdrop-blur-sm"
+      class="reveal inline-block px-8 py-3 tablet:px-10 tablet:py-4 border border-white/30 text-white hover:bg-[#c6a266] hover:border-[#c6a266] hover:text-black transition-all duration-700 text-[10px] tablet:text-xs tracking-widest uppercase cursor-pointer backdrop-blur-sm"
     >
       {{ 'HOME.HERO.CTA' | translate }}
     </a>
   </div>
 
-  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden md:block opacity-50">
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden tablet:block opacity-50">
     <div class="scroll-line"></div>
   </div>
 </section>
 
-<section id="about" class="bg-[#0a0a0a] py-20 md:py-32 px-6 md:px-20 overflow-hidden">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-    <div class="reveal-left order-2 lg:order-1 relative group mx-auto lg:mx-0">
+<section id="about" class="bg-[#0a0a0a] py-20 tablet:py-32 px-6 tablet:px-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 tablet:grid-cols-2 gap-16 items-center">
+    <div class="reveal-left order-2 tablet:order-1 relative group mx-auto tablet:mx-0">
       <div class="relative z-10 overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800"
@@ -57,18 +57,20 @@
       ></div>
     </div>
 
-    <div class="reveal-right order-1 lg:order-2 text-center lg:text-start">
-      <span class="text-[#c6a266] font-serif italic text-xl md:text-2xl block mb-4 tracking-widest">
+    <div class="reveal-right order-1 tablet:order-2 text-center tablet:text-start">
+      <span
+        class="text-[#c6a266] font-serif italic text-xl tablet:text-2xl block mb-4 tracking-widest"
+      >
         {{ 'HOME.ABOUT.TAGLINE' | translate }}
       </span>
       <h2
-        class="text-white text-4xl md:text-6xl font-bold mb-8 tracking-tight font-serif leading-tight"
+        class="text-white text-4xl tablet:text-6xl font-bold mb-8 tracking-tight font-serif leading-tight"
       >
         {{ 'HOME.ABOUT.TITLE_1' | translate }} <br />
         <span class="italic text-[#c6a266]">{{ 'HOME.ABOUT.TITLE_2' | translate }}</span>
       </h2>
       <p
-        class="text-gray-400 text-base md:text-xl leading-relaxed mb-10 font-light max-w-2xl mx-auto lg:mr-0 italic"
+        class="text-gray-400 text-base tablet:text-xl leading-relaxed mb-10 font-light max-w-2xl mx-auto tablet:mr-0 italic"
       >
         {{ 'HOME.ABOUT.DESCRIPTION' | translate }}
       </p>
@@ -84,20 +86,20 @@
 
 <section id="menu-grid" class="bg-black py-24">
   <div class="reveal text-center mb-16 px-4">
-    <h2 class="text-white text-5xl md:text-7xl font-serif italic mb-6">
+    <h2 class="text-white text-5xl tablet:text-7xl font-serif italic mb-6">
       {{ 'HOME.MENU.TITLE' | translate }}
     </h2>
     <div class="w-24 h-[1px] bg-[#c6a266] mx-auto opacity-50"></div>
   </div>
 
   <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-2"
+    class="grid grid-cols-1 tablet:grid-cols-2 lg:grid-cols-4 gap-2 px-2"
     [attr.dir]="translate.currentLang === 'ar' ? 'rtl' : 'ltr'"
   >
     @for (cat of categories; track cat.id; let i = $index) {
       <div
         [routerLink]="['/menu', cat.category, cat.categoryId]"
-        class="reveal group relative h-[400px] md:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
+        class="reveal group relative h-[400px] tablet:h-[550px] overflow-hidden cursor-pointer shadow-2xl"
         [style.transition-delay]="i * 0.15 + 's'"
       >
         <img
@@ -113,7 +115,9 @@
           <p class="text-[#c6a266] font-serif italic text-base mb-2 tracking-widest">
             {{ cat.it }}
           </p>
-          <h3 class="text-white text-3xl md:text-4xl font-bold tracking-tight uppercase font-serif">
+          <h3
+            class="text-white text-3xl tablet:text-4xl font-bold tracking-tight uppercase font-serif"
+          >
             {{ translate.currentLang === 'en' ? cat.it : cat.ar }}
           </h3>
         </div>
@@ -127,7 +131,7 @@
 </section>
 
 <section
-  class="reveal relative h-[600px] md:h-[750px] flex items-center justify-center md:justify-end px-6 md:px-32 overflow-hidden"
+  class="reveal relative h-[600px] tablet:h-[750px] flex items-center justify-center tablet:justify-end px-6 tablet:px-32 overflow-hidden"
 >
   <img
     src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?q=80&w=1200"
@@ -135,18 +139,18 @@
   />
   <div
     class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"
-    [class.md:bg-gradient-to-l]="translate.currentLang === 'ar'"
-    [class.md:bg-gradient-to-r]="translate.currentLang === 'en'"
+    [class.tablet:bg-gradient-to-l]="translate.currentLang === 'ar'"
+    [class.tablet:bg-gradient-to-r]="translate.currentLang === 'en'"
   ></div>
 
   <div class="relative z-10 max-w-xl w-full text-start flex flex-col">
-    <h2 class="text-[#c6a266] font-serif italic text-2xl md:text-3xl mb-4 tracking-widest">
+    <h2 class="text-[#c6a266] font-serif italic text-2xl tablet:text-3xl mb-4 tracking-widest">
       {{ 'HOME.SHISHA.TAGLINE' | translate }}
     </h2>
-    <h3 class="text-white text-5xl md:text-7xl font-bold mb-8 italic font-serif leading-tight">
+    <h3 class="text-white text-5xl tablet:text-7xl font-bold mb-8 italic font-serif leading-tight">
       {{ 'HOME.SHISHA.TITLE' | translate }}
     </h3>
-    <p class="text-gray-300 text-base md:text-xl leading-relaxed mb-10 font-light italic">
+    <p class="text-gray-300 text-base tablet:text-xl leading-relaxed mb-10 font-light italic">
       {{ 'HOME.SHISHA.DESCRIPTION' | translate }}
     </p>
     <div class="flex">

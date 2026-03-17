@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,8 +10,11 @@ import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate
 })
 export class MenuDetails implements OnInit {
   item: any = null;
+  navCategories: { labelAr: string; labelIt: string; firstId: string; isActive: boolean }[] = [];
+
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     public translate: TranslateService,
   ) {}
 
@@ -1078,10 +1081,38 @@ export class MenuDetails implements OnInit {
   ];
 
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      this.item = this.fullMenu.find((m) => m.id === id);
+    this.route.paramMap.subscribe((params) => {
+      const id = params.get('id');
+      if (id) {
+        this.item = this.fullMenu.find((m) => m.id === id);
+        this.buildNavCategories();
+      }
+      window.scrollTo(0, 0);
+    });
+  }
+
+  buildNavCategories() {
+    const seen = new Set<string>();
+    this.navCategories = [];
+
+    for (const menuItem of this.fullMenu) {
+      const parts = menuItem.category.split('//');
+      const arLabel = parts[0].trim();
+      const itLabel = parts[1]?.trim() ?? '';
+
+      if (!seen.has(arLabel)) {
+        seen.add(arLabel);
+        this.navCategories.push({
+          labelAr: arLabel,
+          labelIt: itLabel,
+          firstId: menuItem.id,
+          isActive: this.item ? menuItem.category === this.item.category : false,
+        });
+      }
     }
-    window.scrollTo(0, 0); // عشان الصفحة تبدأ من فوق
+  }
+
+  goToCategory(firstId: string) {
+    this.router.navigate(['/menu/details', firstId]);
   }
 }

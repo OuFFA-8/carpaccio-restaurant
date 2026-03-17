@@ -75,7 +75,7 @@
 /* =========================================
    4. Mobile Adjustments
    ========================================= */
-@media (max-width: 768px) {
+@media (max-width: 719px) {
   /* في الموبايل، نقلل المسافة عشان ميحصلش Horizontal Scroll */
   .reveal-left,
   .reveal-right {

@@ -99,7 +99,7 @@
    3. Mobile Adjustments
    ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 719px) {
   .reveal-left,
   .reveal-right {
     transform: translateY(40px);

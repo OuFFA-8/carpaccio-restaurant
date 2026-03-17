@@ -12,7 +12,7 @@
   "HOME": {
     "HERO": {
       "TITLE": "Carpaccio",
-      "SUBTITLE": "The Essence of Italian Taste",
+      "SUBTITLE": "Where Every Moment Becomes a Memory",
       "CTA": "Explore the Menu",
       "CATEGORIES": {
         "1": "Appetizers",
@@ -22,11 +22,11 @@
       }
     },
     "ABOUT": {
-      "TAGLINE": "Our Story",
-      "TITLE_1": "The Art of Plating ",
-      "TITLE_2": "With an Italian Touch",
-      "DESCRIPTION": "At 'Carpaccio', we believe every dish is a masterpiece. Inspired by Italian precision, we are committed to delivering a unique dining experience that combines fresh ingredients with traditional culinary secrets.",
-      "CTA": "Read Our Full Story"
+      "TAGLINE": "More Than Just a Restaurant",
+      "TITLE_1": "Exceptional Flavors,",
+      "TITLE_2": "Lasting Memories",
+      "DESCRIPTION": "In the heart of Jericho Gate, we blended Eastern and international cuisine with elegant indoor and outdoor settings — crafting an experience worth remembering.",
+      "CTA": "Our Story"
     },
     "MENU": {
       "TITLE": "The Selection"
@@ -59,9 +59,11 @@
   "ABOUT": {
     "TAGLINE": "About Carpaccio",
     "STORY_TITLE": "Our Story",
-    "STORY_P1": "It all began in 1995, amidst the ancient alleys of Rome, where Chef Carpaccio learned that the secret of Italian cuisine lies in",
-    "STORY_HIGHLIGHT": "Simplicity & Quality",
-    "STORY_P2": "We don't just offer a menu; we offer a sensory journey starting from hand-picking fresh tomatoes, to our hand-made pasta prepared every morning, reaching our signature luxury Carpaccio servings.",
+    "STORY_P1": "At the heart of Jericho Gate, Carpaccio was born from a vision that a place should be more than a restaurant — a complete experience rooted in",
+    "STORY_HIGHLIGHT": "Passion & Distinction",
+    "STORY_P2": "We blend Eastern and international flavors with elegant indoor and outdoor settings — creating a space for family, friends, and every moment worth remembering.",
+    "SIGNATURE_TITLE": "Carpaccio Signature",
+    "SIGNATURE_SUB": "An Experience That Stays With You",
     "SECRET_BTN": "Discover Our Secret",
     "SECRET_TEXT": "\"Since you've read our story, a special welcome appetizer awaits you on your next visit.\""
   },
@@ -85,6 +87,7 @@
     }
   },
   "MENU": {
+    "WELCOME": "Welcome to Carpaccio",
     "TITLE": "Our Menu",
     "EXPLORE": "Explore Now"
   },

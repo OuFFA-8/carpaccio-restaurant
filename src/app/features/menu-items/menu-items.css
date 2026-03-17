@@ -112,3 +112,21 @@ body {
     transform: translateX(4px) rotate(180deg);
   }
 }
+/* Sidebar no-scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* تعديل الموبايل */
+@media (max-width: 719px) {
+  .item-card img {
+    filter: grayscale(0) !important;
+  }
+  .item-card:active {
+    transform: scale(0.98);
+  }
+}

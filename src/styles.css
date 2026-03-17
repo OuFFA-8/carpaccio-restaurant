@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+@theme {
+  --breakpoint-tablet: 45rem; /* 720px = iPad Portrait */
+}
+
 body,
 h1,
 h4,
