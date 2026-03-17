@@ -350,7 +350,7 @@ export class MenuServices {
       id: 'hot-antipasti-pastilla',
       categoryId: 'hot-appetizers',
       it: 'Pastilla Marocchina',
-      ar: 'الباستيا المغربية',
+      ar: 'البسطيلة المغربية',
       price: '44',
       img: 'https://images.unsplash.com/photo-1644704078423-7a91512f4b30?q=80&w=1974',
       description:
@@ -1302,7 +1302,7 @@ export class MenuServices {
       categoryId: 'shisha',
       it: 'Narghilè Carpaccio Special',
       ar: 'أرجيلة كرباتشيو المميزة',
-      price: '45',
+      price: '40',
       img: 'https://images.unsplash.com/photo-1527030126234-08ecff386121?q=80&w=1974',
       description: 'أرجيلة كرباتشيو الخاصة بخلطاتنا السرية وتجهيز احترافي لأفضل تجربة استرخاء.',
       enDescription:
