@@ -326,7 +326,7 @@ export class MenuServices {
       it: 'Focaccia Colazione',
       ar: 'فوكاتشا كلازيون',
       price: '28',
-      img: 'https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?q=80&w=2070',
+      img: '/images/كاليزون.jpeg',
       description:
         'فوكاتشا إيطالية تقليدية، معطرة بالثوم وإكليل الجبل الطازج، تقدم مع تشكيلة من المازات الإيطالية الأصيلة.',
       enDescription:
