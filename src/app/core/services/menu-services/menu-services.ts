@@ -618,19 +618,19 @@ export class MenuServices {
         'A premium chicken and mushroom dish cooked in rich soy cream and caramelized onions, offering a perfect sweet and savory balance.',
       isSignature: true,
     },
-    {
-      id: 'chef-chicken-parmiggiana',
-      categoryId: 'chefs-kitchen',
-      it: 'Pargiot di Pollo',
-      ar: 'برجيوت دجاج',
-      price: '59',
-      img: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=2070',
-      description:
-        'أفخاذ الدجاج المشوية (البرجيوت) بتتبيلة كرباتشيو الخاصة، تقدم بأسلوب عصري يحافظ على طراوة اللحم ونكهته الأصلية.',
-      enDescription:
-        'Grilled chicken thighs (Pargiot) with Carpaccio’s special seasoning, served in a modern style that preserves tenderness and original flavor.',
-      isSignature: false,
-    },
+    // {
+    //   id: 'chef-chicken-parmiggiana',
+    //   categoryId: 'chefs-kitchen',
+    //   it: 'Pargiot di Pollo',
+    //   ar: 'برجيوت دجاج',
+    //   price: '59',
+    //   img: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=2070',
+    //   description:
+    //     'أفخاذ الدجاج المشوية (البرجيوت) بتتبيلة كرباتشيو الخاصة، تقدم بأسلوب عصري يحافظ على طراوة اللحم ونكهته الأصلية.',
+    //   enDescription:
+    //     'Grilled chicken thighs (Pargiot) with Carpaccio’s special seasoning, served in a modern style that preserves tenderness and original flavor.',
+    //   isSignature: false,
+    // },
     // السمك والبحر (Pesce e Mare) - أمثلة
     {
       id: 'fish-barramundi',
