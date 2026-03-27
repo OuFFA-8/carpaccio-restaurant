@@ -558,7 +558,7 @@ export class MenuServices {
       categoryId: 'chefs-kitchen',
       it: 'Entrecôte Argentina Invecchiata',
       ar: 'أنتريكوت أرجنتيني معتق',
-      price: '124',
+      price: '165',
       img: 'https://images.unsplash.com/photo-1546241072-48010ad2862c?q=80&w=1974',
       description:
         'قطعة فاخرة بوزن 300 غم من لحم الانتريكوت الأرجنتيني المعتق بعناية، تقدم مع بطاطا مشوية، خضار سوتيه طازجة وصوص بورتوبيلو الغني.',
@@ -569,14 +569,14 @@ export class MenuServices {
     {
       id: 'chef-entrecote-wagyu',
       categoryId: 'chefs-kitchen',
-      it: 'Wagyu Argentino Speciale',
-      ar: 'أنتريكوت واجيو أرجنتيني معتق',
-      price: '159',
+      it: 'Wagyu Premium Entrecôte',
+      ar: 'أنتريكوت واجيو فاخر',
+      price: '480',
       img: 'https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=2070',
       description:
-        'تجربة الرفاهية القصوى مع لحم الواجيو الأرجنتيني المعتق، يتميز بالرخامية العالية والمذاق الذي يذوب في الفم، محضر بأسلوب الشيف الخاص.',
+        'تجربة الرفاهية القصوى مع لحم الواجيو عالي الجودة، يتميز بالرخامية العالية والمذاق الذي يذوب في الفم، محضر بأسلوب الشيف الخاص.',
       enDescription:
-        'The ultimate luxury experience with aged Argentine Wagyu beef, featuring high marbling and a melt-in-your-mouth texture, prepared in the Chef’s special style.',
+        'A premium Wagyu Entrecôte experience with exceptional marbling and melt-in-your-mouth texture, prepared in the Chef’s signature style.',
       isSignature: true,
     },
     {
