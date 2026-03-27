@@ -403,7 +403,7 @@ export class MenuServices {
       categoryId: 'italian-kitchen',
       it: 'Fettuccine Cocorico',
       ar: 'فيتوتشيني كوكوريكو',
-      price: '72',
+      price: '65',
       img: 'https://images.unsplash.com/photo-1645112481338-69067b884d73?q=80&w=2070',
       description:
         'فيتوتشيني طازجة تقدم مع قطع صدر الدجاج المشوية على الجريل مع صوص بيانكا الأبيض وشرائح الفطر الطازج.',
@@ -1736,6 +1736,17 @@ export class MenuServices {
         'تشكيلة نكهات منعشة تشمل: ليمون ونعنع، بطيخ ونعنع، علكة وقرفة، وخلطة Love 66 الشهيرة.',
       enDescription:
         'A variety of refreshing flavors including: Lemon Mint, Watermelon Mint, Gum & Cinnamon, and the famous Love 66 blend.',
+      isSignature: false,
+    },
+    {
+      id: 'shisha-healthy-hose',
+      categoryId: 'shisha',
+      it: 'Tubo Igienico',
+      ar: 'بربيش صحي',
+      price: '5',
+      img: 'https://images.unsplash.com/photo-1604076913837-52ab5629fba9?q=80&w=1974',
+      description: 'بربيش صحي مخصص للاستخدام الفردي لضمان النظافة والراحة.',
+      enDescription: 'Hygienic personal hookah hose for a clean and comfortable experience.',
       isSignature: false,
     },
   ];
