@@ -118,6 +118,12 @@ export class MenuServices {
       img: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=2057',
     },
     {
+      id: 'coffee-kingdom',
+      ar: 'مملكة القهوة',
+      it: 'Regno del Caffè',
+      img: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2070',
+    },
+    {
       id: 'soft-drinks',
       ar: 'مشروبات غازية',
       it: 'Bevande Gassate',
@@ -286,19 +292,19 @@ export class MenuServices {
         'Authentic Italian-style raw aged beef fillet; ultra-thin slices of aged beef served with premium Parmesan, fresh arugula, and a rich touch of extra virgin olive oil.',
       isSignature: true,
     },
-    {
-      id: 'antipasti-tuna-carpaccio',
-      categoryId: 'cold-appetizers',
-      it: 'Red Tuna Carpaccio',
-      ar: 'كرباتشيو التونا الحمراء',
-      price: '38',
-      img: 'https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?q=80&w=2070',
-      description:
-        'تونا حمراء فاخرة من أجود الأنواع، معدة بتتبيلة مطعم كرباتشيو السرية، تقدم مع صوص الثوم الكريمي والأعشاب العطرية التي تبرز نكهة البحر.',
-      enDescription:
-        'Premium red tuna prepared with Carpaccio’s secret marinade, served with creamy garlic sauce and aromatic herbs to highlight the ocean’s freshness.',
-      isSignature: true,
-    },
+    // {
+    //   id: 'antipasti-tuna-carpaccio',
+    //   categoryId: 'cold-appetizers',
+    //   it: 'Red Tuna Carpaccio',
+    //   ar: 'كرباتشيو التونا الحمراء',
+    //   price: '38',
+    //   img: 'https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?q=80&w=2070',
+    //   description:
+    //     'تونا حمراء فاخرة من أجود الأنواع، معدة بتتبيلة مطعم كرباتشيو السرية، تقدم مع صوص الثوم الكريمي والأعشاب العطرية التي تبرز نكهة البحر.',
+    //   enDescription:
+    //     'Premium red tuna prepared with Carpaccio’s secret marinade, served with creamy garlic sauce and aromatic herbs to highlight the ocean’s freshness.',
+    //   isSignature: true,
+    // },
     // المقبلات ساخنة (Antipasti Caldi)
     {
       id: 'hot-antipasti-portobello',
@@ -1175,6 +1181,29 @@ export class MenuServices {
       enDescription: 'A tropical fusion of mango, passion fruit, and melon.',
       isSignature: false,
     },
+    // مملكة القهوة
+    {
+      id: 'drink-iced-coffee',
+      categoryId: 'coffee-kingdom',
+      it: 'Caffè Freddo',
+      ar: 'ايس كوفي',
+      price: '23',
+      img: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1974',
+      description: 'قهوة باردة منعشة تقدم مع الثلج لمذاق قوي ومنعش.',
+      enDescription: 'Refreshing cold coffee served over ice with a bold flavor.',
+      isSignature: false,
+    },
+    {
+      id: 'drink-iced-latte',
+      categoryId: 'coffee-kingdom',
+      it: 'Latte Freddo',
+      ar: 'ايس لاتيه',
+      price: '20',
+      img: 'https://images.unsplash.com/photo-1527169402691-feff5539e52c?q=80&w=1974',
+      description: 'مزيج ناعم من الإسبريسو والحليب البارد مع الثلج.',
+      enDescription: 'Smooth blend of espresso and cold milk served over ice.',
+      isSignature: false,
+    },
     // مشروبات ساخنة
     {
       id: 'drink-cappuccino-lg',
@@ -1318,6 +1347,39 @@ export class MenuServices {
       img: 'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=1974',
       description: 'تشكيلة من الشاي بنكهات متنوعة حسب الاختيار.',
       enDescription: 'A selection of flavored teas, choose your favorite.',
+      isSignature: false,
+    },
+    {
+      id: 'drink-mocha',
+      categoryId: 'hot-drinks',
+      it: 'Mocha',
+      ar: 'موكا',
+      price: '20',
+      img: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1974',
+      description: 'قهوة ممزوجة بالشوكولاتة مع طبقة كريمية لذيذة.',
+      enDescription: 'A rich blend of coffee and chocolate topped with creamy foam.',
+      isSignature: false,
+    },
+    {
+      id: 'drink-salted-caramel',
+      categoryId: 'hot-drinks',
+      it: 'Salted Caramel',
+      ar: 'سولتد كاراميل',
+      price: '20',
+      img: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1974',
+      description: 'مشروب دافئ بنكهة الكراميل المملح مع لمسة حلوة ومميزة.',
+      enDescription: 'A warm drink with sweet and salty caramel flavor.',
+      isSignature: false,
+    },
+    {
+      id: 'drink-affogato-vanilla',
+      categoryId: 'hot-drinks',
+      it: 'Affogato alla Vaniglia',
+      ar: 'افوجاتو فانيلا',
+      price: '20',
+      img: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1974',
+      description: 'آيس كريم فانيلا مغمور بالإسبريسو الساخن.',
+      enDescription: 'Vanilla ice cream drowned in hot espresso.',
       isSignature: false,
     },
     // --- قسم العصائر والموهيتو (Natural Juices & Mojito) ---
