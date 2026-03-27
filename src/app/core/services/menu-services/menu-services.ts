@@ -505,8 +505,8 @@ export class MenuServices {
       id: 'main-grill-mix-380',
       categoryId: 'main-dishes',
       it: 'Grigliata Mista Gerosolimitana (Piccolo)',
-      ar: 'مشكل مشاوي مقدسي (380 غرام)',
-      price: '88',
+      ar: 'مشكل مشاوي مقدسي (340 غرام)',
+      price: '97',
       img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974',
       description:
         'تشكيلة فاخرة لشخص واحد (كباب، صدر دجاج، ريش خاروف، انتلايكوت) على الجريل 380 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة وصوص التشيميتشوري.',
@@ -518,8 +518,8 @@ export class MenuServices {
       id: 'main-grill-mix-750',
       categoryId: 'main-dishes',
       it: 'Grigliata Mista Gerosolimitana (Grande)',
-      ar: 'مشكل مشاوي مقدسي (750 غرام)',
-      price: '154',
+      ar: 'مشكل مشاوي مقدسي (720 غرام)',
+      price: '179',
       img: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1935',
       description:
         'تشكيلة فاخرة لشخصين (كباب، صدر دجاج، ريش خاروف، انتلايكوت) على الجريل 750 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة الغنية وصوص التشيميتشوري المنعش.',
@@ -528,11 +528,23 @@ export class MenuServices {
       isSignature: true,
     },
     {
+      id: 'main-classic-burger',
+      categoryId: 'main-dishes',
+      it: 'Burger Classico',
+      ar: 'برغر كلاسيك',
+      price: '49',
+      img: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1899',
+      description: 'برغر لحم كلاسيكي طازج مع خس وطماطم وجبن وصوص خاص يقدم مع خبز طري.',
+      enDescription:
+        'Classic beef burger with fresh lettuce, tomato, cheese, and special sauce served in soft bread.',
+      isSignature: false,
+    },
+    {
       id: 'main-carpaccio-burger',
       categoryId: 'main-dishes',
       it: 'Carpaccio Burger Speciale',
       ar: 'برغر كرباتشو',
-      price: '54',
+      price: '59',
       img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1899',
       description:
         'برغر عجل فاخر بوزن 200غ، محضر من أجود أنواع اللحم يُقدم في خبز طازج مع شرائح البطاطا الودجز المقرمشة.',
