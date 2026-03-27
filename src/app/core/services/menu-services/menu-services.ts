@@ -661,14 +661,27 @@ export class MenuServices {
     {
       id: 'fish-salmon-papillote',
       categoryId: 'seafood',
-      it: 'Salmone Norvegese al Cartoccio',
-      ar: 'سلمون نرويجي بابيونا',
+      it: 'Filetto di Salmone Norvegese Premium',
+      ar: 'ستيك سالمون نرويجي فاخر',
       price: '98',
       img: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1974',
       description:
-        'سلمون نرويجي فاخر مخبوز في فرن الطابون بتقنية البابيونا مع طماطم مجففة وريحان، يقدم مع بطاطا بيوريه ناعمة.',
+        'ستيك سلمون نرويجي فاخر محضر بعناية، يقدم مع طماطم مجففة وريحان مع بطاطا بيوريه ناعمة.',
       enDescription:
-        'Premium Norwegian salmon baked in a stone oven using the "Papillote" technique with sun-dried tomatoes and basil, served with smooth mashed potatoes.',
+        'Premium Norwegian salmon steak prepared to perfection, served with sun-dried tomatoes, basil, and smooth mashed potatoes.',
+      isSignature: true,
+    },
+    {
+      id: 'fish-royal-chef-platter',
+      categoryId: 'seafood',
+      it: 'Piatto Reale dello Chef',
+      ar: 'بلاطة الشيف الملكية',
+      price: '150',
+      img: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1974',
+      description:
+        'تشكيلة فاخرة من المأكولات البحرية المختارة بعناية من الشيف، تقدم لشخص واحد بتقديم راقٍ ومميز.',
+      enDescription:
+        'A luxurious selection of chef-curated seafood, elegantly served for one person.',
       isSignature: true,
     },
     {
