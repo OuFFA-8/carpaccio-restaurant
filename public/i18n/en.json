@@ -43,14 +43,13 @@
     "QUICK_LINKS": { "TITLE": "Quick Links" },
     "HOURS": {
       "TITLE": "Opening Hours",
-      "WEEK": "Sat - Thu:",
-      "FRIDAY": "Friday:",
+      "WEEK": "Everyday:",
       "SHISHA": "Shisha Vibes:",
       "DAILY": "Available Daily"
     },
     "CONTACT": {
       "TITLE": "Contact Us",
-      "ADDRESS": "Palestine, Jericho\nHisham's Palace St, City Center"
+      "ADDRESS": "Jericho / Jericho Gate / next to Al-Huda Gas Station"
     },
     "RIGHTS": "All rights reserved.",
     "MADE_WITH": "Made with",
@@ -72,7 +71,7 @@
     "TITLE": "Get In Touch",
     "INFO": {
       "LOCATION_TITLE": "Our Location",
-      "LOCATION_DESC": "Palestine, Jericho\nHisham's Palace St, Tourist Area",
+      "LOCATION_DESC": "Palestine, Jericho\nJericho Gate, next to Al-Huda Gas Station",
       "RESERVATION_TITLE": "Reservations",
       "HOURS_DESC": "Daily: 12:00 PM - 12:00 AM",
       "SHISHA_TAG": "Shisha vibes & premium flavors are always available"
