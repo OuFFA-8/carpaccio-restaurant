@@ -285,7 +285,7 @@ export class MenuServices {
       it: 'Beef Fillet Carpaccio',
       ar: 'كرباتشيو فيليه العجل',
       price: '39',
-      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
+      img: '/images/كارباتشيو فيليه عجل.jpg',
       description:
         'فيليه عجل نيء معتق على الطريقة الإيطالية الأصلية؛ شرائح رفيعة جداً من لحم العجل المعتق تقدم مع جبنة البارميزان الفاخرة وأوراق الجرجير الطازجة، مع لمسة غنية من زيت الزيتون البكر.',
       enDescription:
@@ -312,7 +312,7 @@ export class MenuServices {
       it: 'Portobello con Crema di Salmone',
       ar: 'فطر بورتوبيلو بكريم السلمون',
       price: '38',
-      img: 'https://images.unsplash.com/photo-1603048297172-c92544798d5e?q=80&w=2070',
+      img: '/images/فطر بورتوبيلو.jpg',
       description:
         'فطر بورتوبيلو مشوي ومحشي بالسلمون المدخن وجبنة الريكوتا المميزة، يقدم مع صوص بيانكا كريمي ومتبل بالأعشاب الطازجة.',
       enDescription:
@@ -351,7 +351,7 @@ export class MenuServices {
       it: 'Filo di Fichi e Feta',
       ar: 'فيلو التين وجبن الفيتا',
       price: '42',
-      img: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1974',
+      img: '/images/فيلو التين.webp',
       description:
         'تين موسمي طازج يقدم مع جبن الفيتا المالح، مغلفان بعجينة الفيلو المقرمشة ومزين بصوص الكراميل اللذيذ.',
       enDescription:
@@ -468,7 +468,7 @@ export class MenuServices {
       it: 'Pollo alla Stroganoff',
       ar: 'دجاج استروجونوف',
       price: '68',
-      img: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2070',
+      img: '/images/سترجانوف.jpg',
       description:
         'صدر دجاج طري مطهو بصوص كريمي غني بالمشروم والأعشاب العطرية، يقدم مع الأرز الأبيض الناصع. طبق كلاسيكي بلمسة كرباتشيو الخاصة.',
       enDescription:
