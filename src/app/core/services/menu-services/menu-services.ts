@@ -677,7 +677,7 @@ export class MenuServices {
       it: 'Piatto Reale dello Chef',
       ar: 'بلاطة الشيف الملكية',
       price: '150',
-      img: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1974',
+      img: '/images/بلاطة الشيف الملكية.jpeg',
       description:
         'تشكيلة فاخرة من المأكولات البحرية المختارة بعناية من الشيف، تقدم لشخص واحد بتقديم راقٍ ومميز.',
       enDescription:
