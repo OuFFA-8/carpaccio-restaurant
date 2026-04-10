@@ -245,7 +245,7 @@ export class MenuServices {
       it: 'Lentil Soup',
       ar: 'شوربة عدس على طريقة كرباتشيو',
       price: '29',
-      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      img: '/images/شوربة عدس كارباتشو.jpeg',
       description:
         'الشوربة التقليدية بلمسة كرباتشيو الخاصة، محضرة من أجود أنواع العدس والبهارات العطرية لتمنحك الدفء والمذاق الأصيل.',
       enDescription:
@@ -258,7 +258,7 @@ export class MenuServices {
       it: 'Vegetable Soup',
       ar: 'شوربة خضار',
       price: '19',
-      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      img: '/images/شوربة خضار.jpeg',
       description:
         'مزيج طازج من خضروات الموسم المطهوة بعناية في مرق غني بالنكهات الطبيعية، خيار صحي وخفيف.',
       enDescription:
@@ -271,7 +271,7 @@ export class MenuServices {
       it: 'Seafood Soup',
       ar: 'شوربة فواكه البحر',
       price: '34',
-      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      img: '/images/شوربه فواكه البحر.jpeg',
       description:
         'تشكيلة فاخرة من ثمار البحر (جمبري، كلماري، وبلح البحر) مطهوة في مرق غني بالكريمة والأعشاب الإيطالية لتجربة بحرية لا تُنسى.',
       enDescription:
@@ -377,7 +377,7 @@ export class MenuServices {
       it: 'Focaccia Caprese',
       ar: 'فوكاتشا كابريزة',
       price: '38',
-      img: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=2076',
+      img: '/images/فوكاتشا كابريزة.jpeg',
       description:
         'فوكاتشا طابون طازجة من فرن كرباتشيو المميز، تغطى بالطماطم الطازجة وجبنة الموزيريلا الكريمية وأوراق الريحان مع رشة من زيت الزيتون البكر.',
       enDescription:
@@ -391,7 +391,7 @@ export class MenuServices {
       it: 'Ravioli ai Quattro Formaggi',
       ar: 'رافيولي الأجبان',
       price: '64',
-      img: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2032',
+      img: '/images/رافيولي.jpeg',
       description:
         'أصابع الرافيولي المحشوة بمزيج غني من أربعة أجبان إيطالية فاخرة (موتزيريلا، بارميزان، ريكوتا، فيتا) تقدم مع صوص روزيه كريمي يذوب في الفم.',
       enDescription:
@@ -404,7 +404,7 @@ export class MenuServices {
       it: 'Fettuccine Cocorico',
       ar: 'فيتوتشيني كوكوريكو',
       price: '65',
-      img: 'https://images.unsplash.com/photo-1645112481338-69067b884d73?q=80&w=2070',
+      img: '/images/فيتوتشيني.jpeg',
       description:
         'فيتوتشيني طازجة تقدم مع قطع صدر الدجاج المشوية على الجريل مع صوص بيانكا الأبيض وشرائح الفطر الطازج.',
       enDescription:
@@ -443,7 +443,7 @@ export class MenuServices {
       it: 'Penne al Pesto',
       ar: 'بيني بيستو',
       price: '49',
-      img: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?q=80&w=1994',
+      img: '/images/بيني بيستو.jpeg',
       description:
         'مكرونة بيني ممزوجة بصوص البيستو الإيطالي الطازج المحضّر من الريحان، الصنوبر، زيت الزيتون، وجبنة البارميزان المعتقة.',
       enDescription:
@@ -769,7 +769,7 @@ export class MenuServices {
       it: 'Insalata di Pomodorini',
       ar: 'سلطة بومودوريني',
       price: '48',
-      img: 'https://images.unsplash.com/photo-1592417817098-8f3b6be00d86?q=80&w=1974',
+      img: '/images/سلطة بومودوريني.jpeg',
       description:
         'بندورة الشيري الكرزية الإيطالية وزيتون الكلماتا اليوناني مع صوص البيستو العطري، وجبنة البرينزاه المبروشة مع زيت الزيتون الصافي.',
       enDescription:
@@ -810,7 +810,7 @@ export class MenuServices {
       price: '58',
       img: 'https://images.unsplash.com/photo-1505253716362-afaba1d3241f?q=80&w=1974',
       description:
-        'قطع من جبن الغنم وجبن الحلومي المقلي مغلف بالبانكو والقرشلة، على مكس من الخضار الطازجة، بصل أحمر وخبز محمص بصوص الباستوريه الإيطالي الفاخر.',
+        'قطع من جبن الحلومي المقلي والبارميزان مغلف بالبانكو والقرشلة، على مكس من الخضار الطازجة، بصل أحمر وخبز محمص بصوص الباستوريه الإيطالي الفاخر.',
       enDescription:
         'Pieces of sheep cheese and fried Halloumi coated in Panko, served on fresh mixed greens with red onion, croutons, and premium Italian Pastore sauce.',
       isSignature: false,
@@ -871,7 +871,7 @@ export class MenuServices {
       it: 'Pizza Margherita per Bambini',
       ar: 'بيتزا مارجيريتا للأطفال',
       price: '34',
-      img: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?q=80&w=2070',
+      img: '/images/مارجاريتا.jpeg',
       description:
         'بيتزا إيطالية بعجينة رقيقة محضرة خصيصاً للأطفال مع صلصة الطماطم الطبيعية وجبنة الموتزيريلا الغنية والريحان.',
       enDescription:
@@ -1005,7 +1005,7 @@ export class MenuServices {
       it: 'Hummus con Carne',
       ar: 'حمص مع لحمة',
       price: '34',
-      img: 'https://images.unsplash.com/photo-1577906030558-841f30869639?q=80&w=2070',
+      img: '/images/حمص بلحمة.jpeg',
       description: 'حمص كريمي مغطى بقطع لحم العجل المفروم والمتبل والمحمص مع الصنوبر.',
       enDescription: 'Creamy hummus topped with seasoned minced veal and toasted pine nuts.',
       isSignature: true,
