@@ -808,7 +808,7 @@ export class MenuServices {
       it: 'Insalata del Pastore',
       ar: 'سلطة الراعي باستوريه',
       price: '58',
-      img: 'https://images.unsplash.com/photo-1505253716362-afaba1d3241f?q=80&w=1974',
+      img: '/images/سلطة راعي الباستوريه.jpeg',
       description:
         'قطع من جبن الحلومي المقلي والبارميزان مغلف بالبانكو والقرشلة، على مكس من الخضار الطازجة، بصل أحمر وخبز محمص بصوص الباستوريه الإيطالي الفاخر.',
       enDescription:
