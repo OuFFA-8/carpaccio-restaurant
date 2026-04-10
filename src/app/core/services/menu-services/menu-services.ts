@@ -638,7 +638,7 @@ export class MenuServices {
       it: 'Filetto di Barramundi in Crosta',
       ar: 'فيليه براموندي بالكريكر الفرنسي',
       price: '98',
-      img: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=2070',
+      img: '/images/برموندي بالكريكر الفرنسي.jpeg',
       description:
         'فيليه براموندي طازج مغلف بالكريكر الفرنسي المقرمش ومشوي بالفرن بعناية، يقدم مع خضار سوتيه طازجة.',
       enDescription:
