@@ -325,7 +325,7 @@ export class MenuServices {
       it: 'Gamberi Black Tiger Piccante',
       ar: 'جمبري بلاك تايجر الحار بالكزبرة',
       price: '44',
-      img: 'https://images.unsplash.com/photo-1559742811-822873691df8?q=80&w=1974',
+      img: '/images/بلاك تايجر بصوص الشطة والكزبرة.jpeg',
       description:
         'جمبري طازج مشوي على الجريل ومغطى بميرنادا الشطة والكزبرة، ليمنحك مذاقاً آسيوياً إيطالياً مميزاً وفريداً.',
       enDescription:
@@ -703,7 +703,7 @@ export class MenuServices {
       it: 'Gamberi Black Tiger al Burro',
       ar: 'جمبري بلاك تايجر بصوص الزبدة',
       price: '98',
-      img: 'https://images.unsplash.com/photo-1559742811-822873691df8?q=80&w=1974',
+      img: '/images/شريمز بلاك تايجر تايلندي.jpeg',
       description:
         'جمبري بلاك تايجر الفاخر مطهو بصوص زبدة بذور البندورة والزعتر البري لمذاق غني وعميق.',
       enDescription:
@@ -970,7 +970,7 @@ export class MenuServices {
       it: 'Verdure Sauté',
       ar: 'خضار سوتيه',
       price: '18',
-      img: 'https://images.unsplash.com/photo-1534939561126-72194c224753?q=80&w=1974',
+      img: '/images/خضار سوتيه.jpeg',
       description: 'تشكيلة من خضروات الموسم الطازجة المطهوة على البخار مع القليل من زيت الزيتون.',
       enDescription:
         'A medley of fresh seasonal vegetables steamed and lightly sautéed with extra virgin olive oil.',
