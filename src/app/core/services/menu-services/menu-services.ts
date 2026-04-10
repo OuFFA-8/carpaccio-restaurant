@@ -364,7 +364,7 @@ export class MenuServices {
       it: 'Pastilla Marocchina',
       ar: 'البسطيلة المغربية',
       price: '44',
-      img: 'https://images.unsplash.com/photo-1644704078423-7a91512f4b30?q=80&w=1974',
+      img: '/images/بسطيلة مغربية.jpeg',
       description:
         'عجينة مغربية رقيقة ومقرمشة محشوة بلحم متبل ببهارات كرباتشيو ومقلية بالزيت، بالإضافة إلى الفواكة المجففة والقرفة والسكر الناعم لمزيج حلو ومالح مثالي.',
       enDescription:
@@ -417,7 +417,7 @@ export class MenuServices {
       it: 'Noodles Thailandesi',
       ar: 'نودلز تايلندي',
       price: '49',
-      img: 'https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=1964',
+      img: '/images/نودليز.jpeg',
       description:
         'نودلز آسيوية مقلية على الطريقة التايلندية مع خضار طازجة وصوص غني بنكهة الصويا والليمون، بلمسة توازن مثالية بين الحلو والحامض.',
       enDescription:
@@ -430,7 +430,7 @@ export class MenuServices {
       it: 'Pasta alla Bolognese',
       ar: 'باستا بولونيز',
       price: '49',
-      img: 'https://images.unsplash.com/photo-1622973536968-3ead9e780960?q=80&w=2070',
+      img: '/images/باستا بولونيز.jpeg',
       description:
         'باستا إيطالية كلاسيكية تُقدَّم مع صوص بولونيز الشهير المحضر من اللحم المفروم الطازج والطماطم العطرية والأعشاب الإيطالية.',
       enDescription:
@@ -507,7 +507,7 @@ export class MenuServices {
       it: 'Grigliata Mista Gerosolimitana (Piccolo)',
       ar: 'مشكل مشاوي مقدسي (340 غرام)',
       price: '97',
-      img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974',
+      img: '/images/مشكل مشاوي مقدسي.jpeg',
       description:
         'تشكيلة فاخرة لشخص واحد (كباب، صدر دجاج، ريش خاروف، انتلايكوت) على الجريل 380 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة وصوص التشيميتشوري.',
       enDescription:
@@ -857,7 +857,7 @@ export class MenuServices {
       it: 'Assortimento di Insalate (12 Tipi)',
       ar: 'تشكيلة سلطات كرباتشو (12 نوع)',
       price: '45',
-      img: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053',
+      img: '/images/تشكيلة سلطات ١٢ نوع.jpeg',
       description:
         'تشكيلة فاخرة من 12 نوع سلطة طازجة تحضر يومياً، يشمل إعادة التعبئة (Refill) عند طلب وجبة رئيسية.',
       enDescription:
@@ -884,7 +884,7 @@ export class MenuServices {
       it: 'Schnitzel di Pollo e Patatine',
       ar: 'أصابع شنيتسل وشيبس',
       price: '44',
-      img: 'https://images.unsplash.com/photo-1569058242253-92a9c71f9867?q=80&w=2070',
+      img: '/images/اصابع شنيتسل.jpeg',
       description:
         'أصابع دجاج مقرمشة محضرة من صدر الدجاج الطازج، تقدم مع أصابع البطاطا المقلية الذهبية.',
       enDescription:
@@ -958,7 +958,7 @@ export class MenuServices {
       it: 'Purè di Patate',
       ar: 'بطاطا بيوريه (مهروسة)',
       price: '18',
-      img: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1974',
+      img: '/images/بطاطا بوريه.jpeg',
       description: 'بطاطا مهروسة ناعمة محضرة بالزبدة والكريمة بلمسة كرباتشيو.',
       enDescription:
         'Smooth mashed potatoes prepared with premium butter and cream, with Carpaccio’s signature touch.',
@@ -994,7 +994,7 @@ export class MenuServices {
       it: 'Piatto di Riso',
       ar: 'صحن أرز',
       price: '18',
-      img: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=1974',
+      img: '/images/اضافة صحن أرز.jpeg',
       description: 'أرز أبيض ناصع مطهو بإتقان ليناسب الأطباق الرئيسية.',
       enDescription: 'Perfectly cooked fluffy white rice, a great accompaniment to any main dish.',
       isSignature: false,
