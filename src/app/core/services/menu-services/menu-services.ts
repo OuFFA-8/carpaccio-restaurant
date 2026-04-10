@@ -611,7 +611,7 @@ export class MenuServices {
       it: 'Volostir Carpaccio di Pollo',
       ar: 'فولوستير كرباتشو',
       price: '88',
-      img: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=2070',
+      img: '/images/فولوستير كرباتشو.jpeg',
       description:
         'طبق دجاج ومشروم فاخر، يُطهى بكريمة الصويا الغنية والبصل المكرمل، ليقدم مذاقاً متوازناً بين الحلو والمالح يذوب في الفم.',
       enDescription:
