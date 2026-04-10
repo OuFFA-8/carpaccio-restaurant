@@ -494,7 +494,7 @@ export class MenuServices {
       it: 'Kebab al Forno Taboon',
       ar: 'فخارة كباب بالطابون',
       price: '88',
-      img: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069',
+      img: '/images/كباب الطابون.jpeg',
       description:
         'كباب فاخر من لحم العجل الطازج بالإضافة إلى الصنوبر والكستناء على صوص الاسكندر، يخبز مع خبز الطابون الطازج من فرن كرباتشيو مع الخضار المشوية.',
       enDescription:
@@ -572,7 +572,7 @@ export class MenuServices {
       it: 'Wagyu Premium Entrecôte',
       ar: 'أنتريكوت واجيو فاخر',
       price: '480',
-      img: 'https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=2070',
+      img: '/images/انتريكوت واجيو.jpeg',
       description:
         'تجربة الرفاهية القصوى مع لحم الواجيو عالي الجودة، يتميز بالرخامية العالية والمذاق الذي يذوب في الفم، محضر بأسلوب الشيف الخاص.',
       enDescription:
