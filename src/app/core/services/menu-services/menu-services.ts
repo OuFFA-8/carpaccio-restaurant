@@ -690,7 +690,7 @@ export class MenuServices {
       it: 'Spigola Intera Fritta',
       ar: 'سمك لبراك كامل مقلي',
       price: '118',
-      img: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?q=80&w=2070',
+      img: '/images/سمك لبراك كامل مقلي.webp',
       description:
         'سمكة لبراك (سيباس) كاملة مقلية بتتبيلة كرباتشو الخاصة المقرمشة، لمحبي المذاق البحري الأصيل.',
       enDescription:
@@ -729,7 +729,7 @@ export class MenuServices {
       it: 'Terracotta di Frutti di Mare al Cocco',
       ar: 'فخارة فواكه البحر بجوز الهند',
       price: '118',
-      img: 'https://images.unsplash.com/photo-1534080564607-c9295478493b?q=80&w=2070',
+      img: '/images/فخارة فواكه البحر بجوز الهند.webp',
       description:
         'مزيج من فواكه البحر (جمبري، كلماري، بلح البحر) مع خضار بصوص كريمة جوز الهند والأعشاب، تطهى في الفخار لتركيز النكهات.',
       enDescription:
@@ -782,7 +782,7 @@ export class MenuServices {
       it: 'Insalata di Indivia',
       ar: 'سلطة الإنديف الإيطالية',
       price: '58',
-      img: 'https://images.unsplash.com/photo-1515544867661-3044d85c3cb9?q=80&w=1974',
+      img: '/images/سلطة الإنديف الإيطالية.webp',
       description:
         'خس فريسكو، خسة عربية، جرجير، خيار، بصل أحمر وبندورة شيري بصوص الأنديف الإيطالي، مغلفة بخسة الأنديف المميزة مع جبن البارميزان ومعجون البيستو.',
       enDescription:
@@ -1224,7 +1224,7 @@ export class MenuServices {
       it: 'Latte Freddo',
       ar: 'ايس لاتيه',
       price: '20',
-      img: 'https://images.unsplash.com/photo-1527169402691-feff5539e52c?q=80&w=1974',
+      img: '/images/ايس لاتيه.webp',
       description: 'مزيج ناعم من الإسبريسو والحليب البارد مع الثلج.',
       enDescription: 'Smooth blend of espresso and cold milk served over ice.',
       isSignature: false,
@@ -1402,7 +1402,7 @@ export class MenuServices {
       it: 'Affogato alla Vaniglia',
       ar: 'افوجاتو فانيلا',
       price: '20',
-      img: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1974',
+      img: '/images/افوجاتو فانيلا.webp',
       description: 'آيس كريم فانيلا مغمور بالإسبريسو الساخن.',
       enDescription: 'Vanilla ice cream drowned in hot espresso.',
       isSignature: false,
@@ -1524,7 +1524,7 @@ export class MenuServices {
       it: 'Milkshake Caffè Italiano',
       ar: 'ميلك شيك إيطالي كافيه',
       price: '26',
-      img: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=1974',
+      img: '/images/ميلك شيك إيطالي كافيه.webp',
       description: 'ميلك شيك بنكهة القهوة الإيطالية الأصيلة.',
       enDescription: 'Milkshake with authentic Italian coffee flavor.',
       isSignature: false,
