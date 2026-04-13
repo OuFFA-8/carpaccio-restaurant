@@ -730,7 +730,7 @@ export class MenuServices {
       it: 'Insalata La Carpaccio',
       ar: 'سلطة لا كرباتشو',
       price: '48',
-      img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070',
+      img: '/images/سلطة لا كرباتشو.jpeg',
       description:
         'مكس من الأعشاب العطرية الطازجة، برغل، مكس مكسرات (كاشيو، فستق حلبي، لوز، فول سوداني)، حوامض، ستروبري، صوص زيت الزيتون والليمون مع خل البلسميك والتوابل الخاصة.',
       enDescription:
@@ -743,7 +743,7 @@ export class MenuServices {
       it: 'Insalata Sicilia',
       ar: 'سلطة سيسيليا',
       price: '48',
-      img: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1968',
+      img: '/images/سلطة سيسيليا.webp',
       description:
         'البطاطا الحلوة المشوية مع البنجر والكولورابي والخيار على ميكس الخس والجرجير بصوص سيتسيليا المميز ومبروش جبنة الفيتا.',
       enDescription:
@@ -821,7 +821,7 @@ export class MenuServices {
       it: 'Insalata Caesar Classica',
       ar: 'سلطة سيزر كلاسيك',
       price: '35',
-      img: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=2070',
+      img: '/images/سلطة سيزر كلاسيك.webp',
       description: 'لب الخس الطازج مع الخبز المحمص وجبن البارميزان مع صوص السيزر الأصلي.',
       enDescription:
         'Fresh hearts of Romaine lettuce with crispy croutons, Parmesan cheese, and authentic Caesar dressing.',
