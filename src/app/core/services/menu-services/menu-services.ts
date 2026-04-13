@@ -520,7 +520,7 @@ export class MenuServices {
       it: 'Grigliata Mista Gerosolimitana (Grande)',
       ar: 'مشكل مشاوي مقدسي (720 غرام)',
       price: '179',
-      img: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1935',
+      img: '/images/مشكل مشاوي مقدسي.jpeg',
       description:
         'تشكيلة فاخرة لشخصين (كباب، صدر دجاج، ريش خاروف، انتلايكوت) على الجريل 750 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة الغنية وصوص التشيميتشوري المنعش.',
       enDescription:
@@ -533,7 +533,7 @@ export class MenuServices {
       it: 'Burger Classico',
       ar: 'برغر كلاسيك',
       price: '49',
-      img: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1899',
+      img: '/images/كلاسيك برغر.jpeg',
       description: 'برغر لحم كلاسيكي طازج مع خس وطماطم وجبن وصوص خاص يقدم مع خبز طري.',
       enDescription:
         'Classic beef burger with fresh lettuce, tomato, cheese, and special sauce served in soft bread.',
@@ -703,7 +703,7 @@ export class MenuServices {
       it: 'Piatto Reale dello Chef (2 Pers.)',
       ar: 'بلاطة الشيف الملكية (لشخصين)',
       price: '248',
-      img: 'https://images.unsplash.com/photo-1551248429-40975aa4de74?q=80&w=1854',
+      img: '/images/بلاطة الشيف لشخصين.jpeg',
       description:
         'تشكيلة فاخرة جداً وحصرية من فواكه البحر والأسماك المختارة، تقدم بأسلوب ملكي يكفي لشخصين.',
       enDescription:
@@ -1013,7 +1013,7 @@ export class MenuServices {
       it: 'Tarte au Citron Français',
       ar: 'باي الليمون الفرنسي',
       price: '34',
-      img: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?q=80&w=1974',
+      img: '/images/باي الليمون الفرنسي.jpeg',
       description:
         'تارت الليمون الفرنسي المنعش، يتميز بتوازن الحموضة والحلاوة، يقدم مع سكوب بوظة فانيلا فاخرة.',
       enDescription:
@@ -1026,7 +1026,7 @@ export class MenuServices {
       it: 'Tarte Aux Pommes et Amandes',
       ar: 'باي التفاح واللووز الفرنسي',
       price: '34',
-      img: 'https://images.unsplash.com/photo-1535927844539-9eec3b976b0b?q=80&w=2070',
+      img: '/images/باي التفاح واللووز الفرنسي.jpeg',
       description:
         'تارت التفاح الفرنسي التقليدي مع شرائح اللوز المحمصة، يقدم دافئاً مع سكوب من بوظة الفانيلا.',
       enDescription:
@@ -1052,7 +1052,7 @@ export class MenuServices {
       it: 'Sinfonia di Ferrero Rocher',
       ar: 'فيريرو روشيه',
       price: '42',
-      img: 'https://images.unsplash.com/photo-1548907040-4baa4335804b?q=80&w=1974',
+      img: '/images/فيريرو روشيه.jpeg',
       description:
         'كيكة الشوكولاتة الغنية بنكهة البندق والفريروشيه، مغطاة بطبقة مقرمشة من الشوكولاتة الفاخرة.',
       enDescription:
@@ -1065,7 +1065,7 @@ export class MenuServices {
       it: 'Bounty al Cocco',
       ar: 'باونتي جوز الهند',
       price: '38',
-      img: 'https://images.unsplash.com/photo-1590089415225-403ed3f96ca2?q=80&w=1974',
+      img: '/images/باونتي جوز الهند.jpeg',
       description:
         'مزيج رائع بين جوز الهند الكريمي والشوكولاتة الداكنة، يقدم بأسلوب كرباتشيو العصري.',
       enDescription:
@@ -1078,7 +1078,7 @@ export class MenuServices {
       it: 'Mousse Tricolade',
       ar: 'موس تريكولاد',
       price: '42',
-      img: 'https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=1974',
+      img: '/images/موس تريكولاد.jpeg',
       description:
         'ثلاث طبقات من موس الشوكولاتة (البيضاء، وبالحليب، والداكنة) لتجربة غنية لعشاق الشوكولاتة.',
       enDescription:
@@ -1091,7 +1091,7 @@ export class MenuServices {
       it: 'Kokilida Austriaca',
       ar: 'كوكيليدا نمساوية',
       price: '44',
-      img: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=1978',
+      img: '/images/كوكيليدا نمساوية.jpeg',
       description:
         'من قلب المطبخ النمساوي، حلوى مميزة تجمع بين القوام الهش والحشوة الغنية بنكهة فريدة.',
       enDescription:
@@ -1209,7 +1209,7 @@ export class MenuServices {
       it: 'Espresso Doppio',
       ar: 'اسبرسو دبل',
       price: '14',
-      img: '/public/images/اسبرسو.jpeg',
+      img: '/images/اسبرسو.jpeg',
       description: 'جرعة مضاعفة من القهوة الإيطالية المركزة.',
       enDescription: 'A double shot of intense, concentrated Italian espresso.',
       isSignature: false,
@@ -1376,7 +1376,7 @@ export class MenuServices {
       it: "Spremuta d'Arancia",
       ar: 'برتقال طبيعي',
       price: '24',
-      img: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=1974',
+      img: '/images/برتقال طبيعي.jpeg',
       description: 'عصير برتقال طازج معصور يدوياً عند الطلب.',
       enDescription: 'Freshly squeezed orange juice, prepared right when you order.',
       isSignature: false,
@@ -1387,7 +1387,7 @@ export class MenuServices {
       it: 'Mix Carota e Arancia',
       ar: 'مكس جزر وبرتقال',
       price: '28',
-      img: 'https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?q=80&w=2070',
+      img: '/images/مكس جزر وبرتقال.jpeg',
       description: 'مزيج صحي غني بالفيتامينات من الجزر والبرتقال الطبيعي.',
       enDescription: 'A healthy, vitamin-rich blend of fresh carrots and natural oranges.',
       isSignature: false,
@@ -1398,7 +1398,7 @@ export class MenuServices {
       it: 'Carpaccio Detox Mix',
       ar: 'خلطة كرباتشو الصحية',
       price: '24',
-      img: 'https://images.unsplash.com/photo-1610970882799-64a3e1d209c0?q=80&w=1974',
+      img: '/images/خلطة كرباتشو الصحية.jpeg',
       description: 'مزيج الديتوكس الخاص: زنجبيل، كرفس، وبنجر.',
       enDescription: 'Our signature detox blend: fresh ginger, celery, and beetroot.',
       isSignature: true,
@@ -1420,7 +1420,7 @@ export class MenuServices {
       it: 'Limonata e Menta',
       ar: 'ليمون ونعنع',
       price: '24',
-      img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=1964',
+      img: '/images/ليمون ونعنع.jpeg',
       description: 'ليمون طازج معصور مع النعنع الطازج على الثلج.',
       enDescription: 'Freshly squeezed lemon with fresh mint served over ice.',
       isSignature: false,
@@ -1431,7 +1431,7 @@ export class MenuServices {
       it: 'Ice Tea',
       ar: 'آيس تي',
       price: '12',
-      img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=1964',
+      img: '/images/آيس تي.jpeg',
       description: 'شاي مثلج منعش.',
       enDescription: 'Refreshing chilled iced tea.',
       isSignature: false,
@@ -1442,7 +1442,7 @@ export class MenuServices {
       it: 'Mojito Sweet Touch Mix',
       ar: 'موهيتو سويت تاتش ميكس',
       price: '24',
-      img: 'https://images.unsplash.com/photo-1546171753-97d7689e48aa?q=80&w=1974',
+      img: '/images/موهيتو سويت تاتش ميكس.jpeg',
       description: 'موهيتو بلمسة حلوة ومنعشة من مزيج نكهات مميز.',
       enDescription: 'Refreshing mojito with a sweet touch of mixed flavors.',
       isSignature: false,
@@ -1519,7 +1519,7 @@ export class MenuServices {
       it: 'Mojito ai Frutti di Bosco',
       ar: 'موهيتو توت / بلوبري',
       price: '24',
-      img: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1974',
+      img: '/images/موهيتو بلوبري.jpeg',
       description: 'موهيتو منعش مع قطع التوت البري والنعناع.',
       enDescription: 'Refreshing mojito with fresh forest berries and mint leaves.',
       isSignature: false,
@@ -1530,7 +1530,7 @@ export class MenuServices {
       it: 'Mojito XL e Menta',
       ar: 'موهيتو اكس ال ونعنع',
       price: '28',
-      img: 'https://images.unsplash.com/photo-1546171753-97d7689e48aa?q=80&w=1974',
+      img: '/images/ليمون ونعنع.jpeg',
       description: 'طاقة إضافية مع موهيتو الإكس ال والنعناع المنعش.',
       enDescription: 'Extra energy boost with XL Mojito and fresh refreshing mint.',
       isSignature: false,
