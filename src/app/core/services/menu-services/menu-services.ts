@@ -618,19 +618,6 @@ export class MenuServices {
         'A premium chicken and mushroom dish cooked in rich soy cream and caramelized onions, offering a perfect sweet and savory balance.',
       isSignature: true,
     },
-    // {
-    //   id: 'chef-chicken-parmiggiana',
-    //   categoryId: 'chefs-kitchen',
-    //   it: 'Pargiot di Pollo',
-    //   ar: 'برجيوت دجاج',
-    //   price: '59',
-    //   img: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=2070',
-    //   description:
-    //     'أفخاذ الدجاج المشوية (البرجيوت) بتتبيلة كرباتشيو الخاصة، تقدم بأسلوب عصري يحافظ على طراوة اللحم ونكهته الأصلية.',
-    //   enDescription:
-    //     'Grilled chicken thighs (Pargiot) with Carpaccio’s special seasoning, served in a modern style that preserves tenderness and original flavor.',
-    //   isSignature: false,
-    // },
     // السمك والبحر (Pesce e Mare) - أمثلة
     {
       id: 'fish-barramundi',
@@ -897,7 +884,7 @@ export class MenuServices {
       it: 'Penne alla Napoletana',
       ar: 'بيني نابوليتانا',
       price: '34',
-      img: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2032',
+      img: '/images/بيني نابوليتانا.jpeg',
       description:
         'مكرونة بيني إيطالية تقدم مع صلصة الطماطم الكلاسيكية المحضرة من الطماطم الطازجة والأعشاب الهادئة.',
       enDescription:
@@ -909,9 +896,9 @@ export class MenuServices {
       id: 'extra-chips',
       categoryId: 'side-dishes',
       it: 'Patatine Fritte',
-      ar: 'شيبس',
+      ar: 'بطاطا شيبس',
       price: '18',
-      img: 'https://images.unsplash.com/photo-1573015084184-3ce2af99b748?q=80&w=2070',
+      img: '/images/بطاطا شيبس.jpeg',
       description: 'أصابع البطاطا المقلية الذهبية والمقرمشة، تقدم ساخنة مع الملح.',
       enDescription: 'Golden and crispy French fries, served hot and lightly salted.',
       isSignature: false,
@@ -922,7 +909,7 @@ export class MenuServices {
       it: 'Patate Wedges',
       ar: 'بطاطا ودجز',
       price: '18',
-      img: 'https://images.unsplash.com/photo-1524338198850-8a2ff63a6372?q=80&w=1974',
+      img: '/images/بطاطا ودجز.jpeg',
       description: 'قطع بطاطا ودجز سميكة متبلة بالأعشاب ومحمرة في الفرن.',
       enDescription: 'Thick potato wedges seasoned with herbs and oven-roasted to perfection.',
       isSignature: false,
