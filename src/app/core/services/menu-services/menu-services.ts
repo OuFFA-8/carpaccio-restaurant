@@ -638,7 +638,7 @@ export class MenuServices {
       it: 'Filetto di Orata alla Parigina',
       ar: 'فيليه دنيس بارازيان',
       price: '108',
-      img: 'https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?q=80&w=2070',
+      img: '/images/فيليه دنيس بارازيان.webp',
       description:
         'فيليه دنيس مشوي بتتبيلة الثوم والأعشاب والليمون المنعشة، يقدم مع بطاطا سوتيه وخضار سوتيه.',
       enDescription:
@@ -651,7 +651,7 @@ export class MenuServices {
       it: 'Filetto di Salmone Norvegese Premium',
       ar: 'ستيك سالمون نرويجي فاخر',
       price: '98',
-      img: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1974',
+      img: '/images/ستيك سالمون نرويجي فاخر.webp',
       description:
         'ستيك سلمون نرويجي فاخر محضر بعناية، يقدم مع طماطم مجففة وريحان مع بطاطا بيوريه ناعمة.',
       enDescription:
