@@ -287,9 +287,9 @@ export class MenuServices {
       price: '39',
       img: '/images/كارباتشيو فيليه عجل.jpg',
       description:
-        'فيليه عجل نيء معتق على الطريقة الإيطالية الأصلية؛ شرائح رفيعة جداً من لحم العجل المعتق تقدم مع جبنة البارميزان الفاخرة وأوراق الجرجير الطازجة، مع لمسة غنية من زيت الزيتون البكر.',
+        'فيليه عجل نيء معتق على الطريقة الإيطالية الأصلية؛ شرائح رفيعة جداً من لحم العجل المعتق تقدم مع جبنة البارميزان الفاخرة وأوراق الجرجير الطازجة، مع لمسة غنية من الأحماض بنكهه ايطالية.',
       enDescription:
-        'Authentic Italian-style raw aged beef fillet; ultra-thin slices of aged beef served with premium Parmesan, fresh arugula, and a rich touch of extra virgin olive oil.',
+        'Authentic Italian-style raw aged veal fillet; ultra-thin slices of aged veal served with premium Parmesan cheese, fresh arugula leaves, and a rich touch of Italian acidity.',
       isSignature: true,
     },
     // {
@@ -613,9 +613,9 @@ export class MenuServices {
       price: '88',
       img: '/images/فولوستير كرباتشو.jpeg',
       description:
-        'طبق دجاج ومشروم فاخر، يُطهى بكريمة الصويا الغنية والبصل المكرمل، ليقدم مذاقاً متوازناً بين الحلو والمالح يذوب في الفم.',
+        'طبق دجاج وكبدة يُطهى بكريمة الصويا الغنية والبصل المكرمل، ليقدم مذاقاً متوازناً بين الحلو والمالح يذوب في الفم.',
       enDescription:
-        'A premium chicken and mushroom dish cooked in rich soy cream and caramelized onions, offering a perfect sweet and savory balance.',
+        'A premium chicken and liver dish cooked in rich soy cream and caramelized onions, offering a perfect sweet and savory balance.',
       isSignature: true,
     },
     // السمك والبحر (Pesce e Mare) - أمثلة
