@@ -1659,7 +1659,7 @@ export class MenuServices {
       it: 'Narghilè Carpaccio Special',
       ar: 'أرجيلة كرباتشيو المميزة',
       price: '45',
-      img: 'https://images.unsplash.com/photo-1527030126234-08ecff386121?q=80&w=1974',
+      img: '/images/أرجيلة كرباتشيو المميزة.jpeg',
       description: 'أرجيلة كرباتشيو الخاصة بخلطاتنا السرية وتجهيز احترافي لأفضل تجربة استرخاء.',
       enDescription:
         'Carpaccio special hookah with our secret blends, professionally prepared for the ultimate relaxation.',
@@ -1693,7 +1693,7 @@ export class MenuServices {
       it: 'Varietà di Gusti',
       ar: 'أراجيل بنكهات متنوعة (ليمون، بطيخ، علكة، Love 66)',
       price: '30',
-      img: 'https://images.unsplash.com/photo-1527030126234-08ecff386121?q=80&w=1974',
+      img: '/images/أراجيل بنكهات متنوعة.jpeg',
       description:
         'تشكيلة نكهات منعشة تشمل: ليمون ونعنع، بطيخ ونعنع، علكة وقرفة، وخلطة Love 66 الشهيرة.',
       enDescription:
