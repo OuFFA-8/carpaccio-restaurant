@@ -128,7 +128,7 @@ export class MenuServices {
       id: 'soft-drinks',
       ar: 'مشروبات غازية',
       it: 'Bevande Gassate',
-      img: '/images/كولا.jpeg',
+      img: '/images/مشروبات غازية.jpeg',
     },
 
     {
