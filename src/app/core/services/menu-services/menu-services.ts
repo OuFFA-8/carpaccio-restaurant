@@ -1671,7 +1671,7 @@ export class MenuServices {
       it: 'Doppia Mela Nakhla',
       ar: 'تفاحتين نخلة',
       price: '40',
-      img: 'https://images.unsplash.com/photo-1527030126234-08ecff386121?q=80&w=1974',
+      img: '/images/تفاحتين نخلة.jpeg',
       description: 'النكهة التقليدية الأصلية من تفاحتين نخلة الشهيرة.',
       enDescription: 'The original traditional flavor of the famous Nakhla Double Apple.',
       isSignature: false,
