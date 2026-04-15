@@ -1320,7 +1320,7 @@ export class MenuServices {
       it: 'Tè alla Menta',
       ar: 'شاي بنعنع',
       price: '14',
-      img: 'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=1974',
+      img: '/images/شاي بنعنع.jpeg',
       description: 'شاي أخضر دافئ منعش مع النعناع الطازج.',
       enDescription: 'Warm refreshing green tea with fresh mint.',
       isSignature: false,
