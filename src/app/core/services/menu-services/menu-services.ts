@@ -25,12 +25,12 @@ export interface MenuItem {
 export class MenuServices {
   // 1. تعريف الأقسام (العناوين اللي هتظهر في الصفحة الرئيسية)
   categories: Category[] = [
-    {
-      id: 'breakfast',
-      ar: 'قسم الفطور',
-      it: 'Colazione',
-      img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
-    },
+    // {
+    //   id: 'breakfast',
+    //   ar: 'قسم الفطور',
+    //   it: 'Colazione',
+    //   img: 'https://images.unsplash.com/photo-1513135557534-682d53fd7046?q=80&w=2070',
+    // },
     {
       id: 'soups',
       ar: 'قسم الشوربات',
@@ -146,71 +146,71 @@ export class MenuServices {
 
   items: MenuItem[] = [
     // الفطور (Colazione)
-    {
-      id: 'bf-1',
-      categoryId: 'breakfast',
-      it: 'Carpaccio Breakfast Experience',
-      ar: 'تجربة فطور كرباتشيو',
-      price: '69 / 129',
-      img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1980',
-      description:
-        'استمتع بتجربة افطار كرباتشيو المميزة لشخص او شخصين. تتضمن اومليت حسب الطلب او بيض عيون، سلطة شيري وأعشاب طازجة، 3 أنواع أجبان مختارة بعناية، قلاية بندورة إيطالية، 9 أنواع مشهيات فاخرة، تقدم مع خبز طابون فوكاتشا طازجة من فرن كرباتشيو، مشروب ساخن، وعصير طبيعي.',
-      enDescription:
-        'Enjoy the signature Carpaccio breakfast for one or two. Includes omelet to order or sunny-side-up eggs, cherry herb salad, 3 premium selected cheeses, Italian tomato pan, 9 luxury appetizers, served with fresh Focaccia bread from our stone oven, a hot drink, and fresh juice.',
-      isSignature: true,
-    },
-    {
-      id: 'bf-2',
-      categoryId: 'breakfast',
-      it: 'Verona Healthy Bowl',
-      ar: 'طبق فيرونا الصحي',
-      price: '49',
-      img: 'https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=1980',
-      description:
-        'وعاء فيرونا الصحي يأتيك مليئاً بالفواكة الموسمية الطازجة بالإضافة الى الشوفان المقرمش والجرانولا، يقدم مع لبن يوناني، عسل طبيعي، وطحينية فاخرة.',
-      enDescription:
-        'A healthy Verona bowl filled with fresh seasonal fruits, crunchy oats, and granola, served with Greek yogurt, natural honey, and premium tahini.',
-      isSignature: false,
-    },
-    {
-      id: 'bf-3',
-      categoryId: 'breakfast',
-      it: 'Pomodorino Pancake',
-      ar: 'بومودورينو بانكيك',
-      price: '49',
-      img: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=1980',
-      description:
-        'بانكيك محضر طازج يومياً بلمسة كرباتشيو الخاصة، يتميز بقوام هش ولذيذ. يقدم مع سيرب الميبل الطبيعي وفواكه موسمية طازجة وصوص شوكولاتة.',
-      enDescription:
-        'Freshly prepared pancakes with Carpaccio’s special touch, featuring a light and fluffy texture. Served with natural maple syrup, fresh seasonal fruits, and chocolate sauce.',
-      isSignature: false,
-    },
-    {
-      id: 'bf-4',
-      categoryId: 'breakfast',
-      it: 'Parisian French Toast',
-      ar: 'فرنش توست باريسي',
-      price: '49',
-      img: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=1547',
-      description:
-        'خبز توست الشوفان مغمس بخلطة كرباتشيو المميزة ومحمص بأجود أنواع الزبدة، يقدم مقرمش مع صوص الفراولة وعسل طبيعي.',
-      enDescription:
-        'Oat toast dipped in Carpaccio’s signature mix and toasted with premium butter, served crispy with strawberry sauce and natural honey.',
-      isSignature: false,
-    },
-    {
-      id: 'bf-5',
-      categoryId: 'breakfast',
-      it: 'Pastore Breakfast',
-      ar: 'فطور باستوري',
-      price: '54',
-      img: 'https://images.unsplash.com/photo-1590412200988-a436970781fa?q=80&w=1964',
-      description:
-        'شكشوكة كرباتشيو الخاصة مع 2 بيض عيون، زيتون، طحينية، سلطة عربية مع الأعشاب الطازجة، بالإضافة الى خبز الطابون الطازج من فرن كرباتشيو (إفطار تقليدي بلمسة عصرية).',
-      enDescription:
-        'Carpaccio special Shakshuka with 2 sunny-side-up eggs, olives, tahini, Arabic herb salad, and fresh Taboon bread from our stone oven (A traditional breakfast with a modern touch).',
-      isSignature: false,
-    },
+    // {
+    //   id: 'bf-1',
+    //   categoryId: 'breakfast',
+    //   it: 'Carpaccio Breakfast Experience',
+    //   ar: 'تجربة فطور كرباتشيو',
+    //   price: '69 / 129',
+    //   img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1980',
+    //   description:
+    //     'استمتع بتجربة افطار كرباتشيو المميزة لشخص او شخصين. تتضمن اومليت حسب الطلب او بيض عيون، سلطة شيري وأعشاب طازجة، 3 أنواع أجبان مختارة بعناية، قلاية بندورة إيطالية، 9 أنواع مشهيات فاخرة، تقدم مع خبز طابون فوكاتشا طازجة من فرن كرباتشيو، مشروب ساخن، وعصير طبيعي.',
+    //   enDescription:
+    //     'Enjoy the signature Carpaccio breakfast for one or two. Includes omelet to order or sunny-side-up eggs, cherry herb salad, 3 premium selected cheeses, Italian tomato pan, 9 luxury appetizers, served with fresh Focaccia bread from our stone oven, a hot drink, and fresh juice.',
+    //   isSignature: true,
+    // },
+    // {
+    //   id: 'bf-2',
+    //   categoryId: 'breakfast',
+    //   it: 'Verona Healthy Bowl',
+    //   ar: 'طبق فيرونا الصحي',
+    //   price: '49',
+    //   img: 'https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=1980',
+    //   description:
+    //     'وعاء فيرونا الصحي يأتيك مليئاً بالفواكة الموسمية الطازجة بالإضافة الى الشوفان المقرمش والجرانولا، يقدم مع لبن يوناني، عسل طبيعي، وطحينية فاخرة.',
+    //   enDescription:
+    //     'A healthy Verona bowl filled with fresh seasonal fruits, crunchy oats, and granola, served with Greek yogurt, natural honey, and premium tahini.',
+    //   isSignature: false,
+    // },
+    // {
+    //   id: 'bf-3',
+    //   categoryId: 'breakfast',
+    //   it: 'Pomodorino Pancake',
+    //   ar: 'بومودورينو بانكيك',
+    //   price: '49',
+    //   img: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=1980',
+    //   description:
+    //     'بانكيك محضر طازج يومياً بلمسة كرباتشيو الخاصة، يتميز بقوام هش ولذيذ. يقدم مع سيرب الميبل الطبيعي وفواكه موسمية طازجة وصوص شوكولاتة.',
+    //   enDescription:
+    //     'Freshly prepared pancakes with Carpaccio’s special touch, featuring a light and fluffy texture. Served with natural maple syrup, fresh seasonal fruits, and chocolate sauce.',
+    //   isSignature: false,
+    // },
+    // {
+    //   id: 'bf-4',
+    //   categoryId: 'breakfast',
+    //   it: 'Parisian French Toast',
+    //   ar: 'فرنش توست باريسي',
+    //   price: '49',
+    //   img: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=1547',
+    //   description:
+    //     'خبز توست الشوفان مغمس بخلطة كرباتشيو المميزة ومحمص بأجود أنواع الزبدة، يقدم مقرمش مع صوص الفراولة وعسل طبيعي.',
+    //   enDescription:
+    //     'Oat toast dipped in Carpaccio’s signature mix and toasted with premium butter, served crispy with strawberry sauce and natural honey.',
+    //   isSignature: false,
+    // },
+    // {
+    //   id: 'bf-5',
+    //   categoryId: 'breakfast',
+    //   it: 'Pastore Breakfast',
+    //   ar: 'فطور باستوري',
+    //   price: '54',
+    //   img: 'https://images.unsplash.com/photo-1590412200988-a436970781fa?q=80&w=1964',
+    //   description:
+    //     'شكشوكة كرباتشيو الخاصة مع 2 بيض عيون، زيتون، طحينية، سلطة عربية مع الأعشاب الطازجة، بالإضافة الى خبز الطابون الطازج من فرن كرباتشيو (إفطار تقليدي بلمسة عصرية).',
+    //   enDescription:
+    //     'Carpaccio special Shakshuka with 2 sunny-side-up eggs, olives, tahini, Arabic herb salad, and fresh Taboon bread from our stone oven (A traditional breakfast with a modern touch).',
+    //   isSignature: false,
+    // },
 
     // --- أمثلة للشوربات ---
     {
@@ -456,7 +456,7 @@ export class MenuServices {
       it: 'Aggiunte Petto di Pollo',
       ar: 'إضافة صدر دجاج مشوي',
       price: '18',
-      img: 'https://images.unsplash.com/photo-1632778149975-420e0e75ee0d?q=80&w=2070',
+      img: '/images/إضافة صدر دجاج.jpeg',
       description: 'صدر دجاج مشوي متبل يضاف على أي طبق باستا أو مكرونة.',
       enDescription: 'Grilled marinated chicken breast, added to any pasta dish.',
       isSignature: false,
@@ -545,7 +545,7 @@ export class MenuServices {
       it: 'Carpaccio Burger Speciale',
       ar: 'برغر كرباتشو',
       price: '59',
-      img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1899',
+      img: '/images/برغر كرباتشو.jpeg',
       description:
         'برغر عجل فاخر بوزن 200غ، محضر من أجود أنواع اللحم يُقدم في خبز طازج مع شرائح البطاطا الودجز المقرمشة.',
       enDescription:
@@ -559,7 +559,7 @@ export class MenuServices {
       it: 'Entrecôte Argentina Invecchiata',
       ar: 'أنتريكوت أرجنتيني معتق',
       price: '165',
-      img: 'https://images.unsplash.com/photo-1546241072-48010ad2862c?q=80&w=1974',
+      img: '/images/أنتريكوت أرجنتيني معتق.jpeg',
       description:
         'قطعة فاخرة بوزن 300 غم من لحم الانتريكوت الأرجنتيني المعتق بعناية، تقدم مع بطاطا مشوية، خضار سوتيه طازجة وصوص بورتوبيلو الغني.',
       enDescription:
@@ -585,7 +585,7 @@ export class MenuServices {
       it: 'Medaglioni di Filetto di Vitello',
       ar: 'مداليات فيليه العجل',
       price: '134',
-      img: 'https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=2062',
+      img: '/images/مداليات فيليه العجل.jpeg',
       description:
         'مداليات فيليه عجل معتق وطرية بوزن 300 غم، مُعدة ببراعة ومقدمة مع صوص الخردل الفرنسي الكلاسيكي لمذاق يجمع بين الرقي والأصالة.',
       enDescription:
@@ -598,7 +598,7 @@ export class MenuServices {
       it: 'Bistecca di Pollo Grigliata',
       ar: 'ستيك صدر الدجاج',
       price: '74',
-      img: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=1913',
+      img: '/images/ستيك صدر الدجاج.jpeg',
       description:
         'صدر دجاج مشوي باحترافية، يُقدم مع بيوريه الجرجير المنعش وصوص زبدة الليمون الحمضي، لتجربة طعام مغذية وخفيفة.',
       enDescription:
@@ -827,17 +827,17 @@ export class MenuServices {
         'Fresh hearts of Romaine lettuce with crispy croutons, Parmesan cheese, and authentic Caesar dressing.',
       isSignature: false,
     },
-    {
-      id: 'salad-extra-chicken',
-      categoryId: 'extras',
-      it: 'Pollo alla Griglia Extra',
-      ar: 'إضافة صدر دجاج مشوي للسلطة',
-      price: '18',
-      img: 'https://images.unsplash.com/photo-1632778149975-420e0e75ee0d?q=80&w=2070',
-      description: 'صدر دجاج مشوي متبل لإضافته على أي نوع سلطة مختار.',
-      enDescription: 'Herb-marinated grilled chicken breast to be added to any selected salad.',
-      isSignature: false,
-    },
+    // {
+    //   id: 'salad-extra-chicken',
+    //   categoryId: 'extras',
+    //   it: 'Pollo alla Griglia Extra',
+    //   ar: 'إضافة صدر دجاج مشوي للسلطة',
+    //   price: '18',
+    //   img: 'https://images.unsplash.com/photo-1632778149975-420e0e75ee0d?q=80&w=2070',
+    //   description: 'صدر دجاج مشوي متبل لإضافته على أي نوع سلطة مختار.',
+    //   enDescription: 'Herb-marinated grilled chicken breast to be added to any selected salad.',
+    //   isSignature: false,
+    // },
     {
       id: 'salad-buffet',
       categoryId: 'salads',
@@ -1152,7 +1152,7 @@ export class MenuServices {
       it: 'Pincolada Special',
       ar: 'كوكتيل بينكولادا',
       price: '32',
-      img: 'https://images.unsplash.com/photo-1545244912-07640984024b?q=80&w=1974',
+      img: '/images/كوكتيل بينكولادا.jpeg',
       description: 'خلطة كرباتشو من الليمون، جوز الهند، الأناناس والتفاح.',
       enDescription: 'Carpaccio’s special Pina Colada mix of lemon, coconut, pineapple, and apple.',
       isSignature: false,
