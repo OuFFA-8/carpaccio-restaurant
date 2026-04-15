@@ -35,7 +35,7 @@ export class MenuServices {
       id: 'soups',
       ar: 'قسم الشوربات',
       it: 'Zuppe',
-      img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071',
+      img: '/images/كبة حاموستا.jpeg',
     },
     {
       id: 'cold-appetizers',
@@ -232,7 +232,7 @@ export class MenuServices {
       it: 'Beetroot Kibbeh Soup',
       ar: 'شوربة كبة البنجر',
       price: '38',
-      img: '/images/كبة البنجر.jpeg',
+      img: '/images/شوربة كبة البنجر.jpeg',
       description:
         'كبة سميد فاخرة تقدم في شوربة بنجر صحية وغنية، تتميز بلونها الزاهي ونكهتها الفريدة التي تضفي لمسة من الحيوية على مائدتك.',
       enDescription:
