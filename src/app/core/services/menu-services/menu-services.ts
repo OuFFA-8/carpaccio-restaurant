@@ -400,6 +400,19 @@ export class MenuServices {
       isSignature: true,
     },
     {
+      id: 'pizza-biga-margherita',
+      categoryId: 'italian-kitchen',
+      it: 'Pizza Margherita con Impasto Biga',
+      ar: 'بيتزا مارجيريتا بعجينة البيجا الإيطالية',
+      price: '52',
+      img: '/images/بيتزا مارجيريتا بعجينة البيجا الإيطالية.jpeg',
+      description:
+        'بيتزا بعجينة البيجا الإيطالية بصوص النابوليتانا المميز مع الريحان الطازج وجبنة الموتزاريلا الفاخرة.',
+      enDescription:
+        'Italian biga dough pizza with signature Neapolitan sauce, fresh basil, and premium mozzarella cheese.',
+      isSignature: false,
+    },
+    {
       id: 'pasta-fettuccine',
       categoryId: 'italian-kitchen',
       it: 'Fettuccine Cocorico',
@@ -858,7 +871,7 @@ export class MenuServices {
       categoryId: 'kids-menu',
       it: 'Pizza Margherita per Bambini',
       ar: 'بيتزا مارجيريتا للأطفال',
-      price: '42',
+      price: '34',
       img: '/images/مارجاريتا.jpeg',
       description:
         'بيتزا إيطالية بعجينة رقيقة محضرة خصيصاً للأطفال مع صلصة الطماطم الطبيعية وجبنة الموتزيريلا الغنية والريحان.',
