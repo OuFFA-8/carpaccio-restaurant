@@ -402,7 +402,7 @@ export class MenuServices {
     {
       id: 'pizza-biga-margherita',
       categoryId: 'italian-kitchen',
-      it: 'Pizza Margherita con Impasto Biga',
+      it: 'Pizza Margherita',
       ar: 'بيتزا مارجيريتا',
       price: '52',
       img: '/images/بيتزا مارجيريتا بعجينة البيجا الإيطالية.jpeg',
