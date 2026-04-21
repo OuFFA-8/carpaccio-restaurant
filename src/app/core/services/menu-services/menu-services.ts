@@ -523,7 +523,7 @@ export class MenuServices {
       price: '97',
       img: '/images/مشكل مشاوي مقدسي.jpeg',
       description:
-        'تشكيلة فاخرة لشخص واحد (كباب، صدر دجاج، ريش خاروف، انتلايكوت) على الجريل 380 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة وصوص التشيميتشوري.',
+        'تشكيلة فاخرة لشخص واحد (كباب، صدر دجاج، ريش خاروف، انتريكوت) على الجريل 380 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة وصوص التشيميتشوري.',
       enDescription:
         'A premium mixed grill for one (Kebab, chicken breast, lamb chops, entrecote) – 380g prepared in authentic Jerusalem style, served with Tahini and Chimichurri sauce.',
       isSignature: false,
@@ -536,7 +536,7 @@ export class MenuServices {
       price: '179',
       img: '/images/مشكل مشاوي مقدسي.jpeg',
       description:
-        'تشكيلة فاخرة لشخصين (كباب، صدر دجاج، ريش خاروف، انتلايكوت) على الجريل 750 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة الغنية وصوص التشيميتشوري المنعش.',
+        'تشكيلة فاخرة لشخصين (كباب، صدر دجاج، ريش خاروف، انتريكوت) على الجريل 750 غرام محضرة بأسلوب مقدسي أصيل، تقدم مع الطحينة الغنية وصوص التشيميتشوري المنعش.',
       enDescription:
         'Luxury mixed grill for two (Kebab, chicken breast, lamb chops, entrecote) – 750g prepared in authentic Jerusalem style, served with rich Tahini and fresh Chimichurri.',
       isSignature: true,
@@ -575,9 +575,9 @@ export class MenuServices {
       price: '165',
       img: '/images/أنتريكوت أرجنتيني معتق.jpeg',
       description:
-        'قطعة فاخرة بوزن 300 غم من لحم الانتريكوت الأرجنتيني المعتق بعناية، تقدم مع بطاطا مشوية، خضار سوتيه طازجة وصوص بورتوبيلو الغني.',
+        'قطعة فاخرة بوزن 300 غم من لحم الأنتريكوت الأرجنتيني المعتق بعناية، تقدم مع بطاطا مشوية، خضار سوتيه طازجة وصوص التشيميتشوري الأرجنتيني الأصيل.',
       enDescription:
-        'A premium 300g cut of carefully aged Argentine Entrecôte, served with roasted potatoes, fresh sautéed vegetables, and rich Portobello sauce.',
+        'A premium 300g cut of carefully aged Argentine Entrecôte, served with roasted potatoes, fresh sautéed vegetables, and authentic Argentine Chimichurri sauce.',
       isSignature: true,
     },
     {
@@ -601,9 +601,9 @@ export class MenuServices {
       price: '134',
       img: '/images/مداليات فيليه العجل.jpeg',
       description:
-        'مداليات فيليه عجل معتق وطرية بوزن 300 غم، مُعدة ببراعة ومقدمة مع صوص الخردل الفرنسي الكلاسيكي لمذاق يجمع بين الرقي والأصالة.',
+        'مداليات فيليه عجل معتق وطرية بوزن 300 غم، مُعدة ببراعة ومقدمة مع صوص التوت الحمضي المميز لمذاق يجمع بين الرقي والأصالة.',
       enDescription:
-        'Tender aged veal fillet medallions (300g), masterfully prepared and served with classic French mustard sauce for a sophisticated and authentic taste.',
+        'Tender aged veal fillet medallions (300g), masterfully prepared and served with a signature citrus berry sauce for a sophisticated and authentic taste.',
       isSignature: false,
     },
     {
@@ -614,9 +614,9 @@ export class MenuServices {
       price: '68',
       img: '/images/ستيك صدر الدجاج.jpeg',
       description:
-        'صدر دجاج مشوي باحترافية، يُقدم مع بيوريه الجرجير المنعش وصوص زبدة الليمون الحمضي، لتجربة طعام مغذية وخفيفة.',
+        'ستيك صدر دجاج مشوي باحترافية، يُقدم مع بطاطا بوريه كريمية وخضار سوتيه طازجة وصوص الكريما الغني.',
       enDescription:
-        'Professionally grilled chicken breast served with fresh arugula puree and zesty lemon butter sauce for a nutritious and light dining experience.',
+        'Grilled chicken breast steak served with creamy mashed potatoes, fresh sautéed vegetables, and rich cream sauce.',
       isSignature: false,
     },
     {
@@ -667,9 +667,9 @@ export class MenuServices {
       price: '98',
       img: '/images/ستيك سالمون نرويجي فاخر.webp',
       description:
-        'ستيك سلمون نرويجي فاخر محضر بعناية، يقدم مع طماطم مجففة وريحان مع بطاطا بيوريه ناعمة.',
+        'ستيك سالمون نرويجي فاخر محضر بعناية، يُقدم مع خضار سوتيه طازجة وبطاطا بوريه ناعمة وصوص الليمون والثوم.',
       enDescription:
-        'Premium Norwegian salmon steak prepared to perfection, served with sun-dried tomatoes, basil, and smooth mashed potatoes.',
+        'Premium Norwegian salmon steak prepared to perfection, served with fresh sautéed vegetables, smooth mashed potatoes, and lemon garlic sauce.',
       isSignature: true,
     },
     {
