@@ -96,7 +96,7 @@ export class MenuServices {
       id: 'desserts',
       ar: 'قسم الحلويات',
       it: 'Dolci',
-      img: '/images/باي الليمون الفرنسي.jpeg',
+      img: '/images/قسم الحلويات.jpeg',
     },
 
     // المشروبات بفروعها (يمكنك جعلها قسم واحد كبير أو تقسيمها)
@@ -104,13 +104,13 @@ export class MenuServices {
       id: 'hot-drinks',
       ar: 'مشروبات ساخنة',
       it: 'Bevande Calde',
-      img: '/images/كابتشينو.jpeg',
+      img: '/images/مشروبات ساخنة.jpeg',
     },
     {
       id: 'natural-juices',
       ar: 'عصائر وموهيتو',
       it: 'Succhi e Mojito',
-      img: '/images/موهيتو بلوبري.jpeg',
+      img: '/images/عصائر وموهيتو.jpeg',
     },
     {
       id: 'cocktails',
@@ -135,7 +135,7 @@ export class MenuServices {
       id: 'ice-cream',
       ar: 'قسم الآيس كريم',
       it: 'Gelato',
-      img: '/images/ثلاث سكوبات آيس كريم.jpeg',
+      img: '/images/قسم الآيس كريم.jpeg',
     },
     {
       id: 'shisha',
