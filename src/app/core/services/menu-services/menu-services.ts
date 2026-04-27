@@ -652,7 +652,7 @@ export class MenuServices {
       it: 'Filetto di Orata alla Parigina',
       ar: 'فيليه دنيس بارازيان',
       price: '99',
-      img: '/images/فيليه دنيس بارازيان.webp',
+      img: '/images/فيليه دنيس بارازيان.jpeg',
       description:
         'فيليه دنيس مشوي بتتبيلة الثوم والأعشاب والليمون المنعشة، يقدم مع بطاطا سوتيه وخضار سوتيه.',
       enDescription:
@@ -691,7 +691,7 @@ export class MenuServices {
       it: 'Spigola Intera Fritta',
       ar: 'سمك لبراك كامل مقلي',
       price: '110',
-      img: '/images/سمك لبراك كامل مقلي.webp',
+      img: '/images/سمك لبراك كامل مقلي.jpeg',
       description:
         'سمكة لبراك (سيباس) كاملة مقلية بتتبيلة كرباتشو الخاصة المقرمشة، لمحبي المذاق البحري الأصيل.',
       enDescription:
