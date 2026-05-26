@@ -870,7 +870,7 @@ export class MenuServices {
       categoryId: 'salads',
       it: 'Tabbouleh Orientale',
       ar: 'تبولة',
-      price: '39',
+      price: '28',
       img: '/images/تبولة.jpeg',
       description:
         'سلطة الشرق الأوسط الكلاسيكية المحضرة من البرغل الطازج والبقدونس والبندورة والبصل الأخضر، متبلة بزيت الزيتون البكر وعصير الليمون الطازج.',
@@ -883,7 +883,7 @@ export class MenuServices {
       categoryId: 'salads',
       it: 'Insalata Fattoush',
       ar: 'فتوش',
-      price: '39',
+      price: '30',
       img: '/images/فتوش.jpeg',
       description:
         'سلطة خضار منعشة مع الفلفل الحلو والخيار والبندورة والخس الأمريكي، مع قطع الخبز المحمص المقرمش وصوص الليمون وزيت الزيتون.',
@@ -896,7 +896,7 @@ export class MenuServices {
       categoryId: 'salads',
       it: 'Insalata Greca',
       ar: 'سلطة يونانية',
-      price: '41',
+      price: '30',
       img: '/images/سلطة يونانية.jpeg',
       description:
         'السلطة اليونانية الأصيلة مع الفلفل الحلو والخيار والبندورة وزيتون الكلماتا وجبن الفيتا المبروش، مغطاة بزيت الزيتون البكر والأعشاب.',
