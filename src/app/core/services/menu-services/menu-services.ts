@@ -865,6 +865,45 @@ export class MenuServices {
         'A premium assortment of 12 types of fresh salads prepared daily; includes free refills when ordering a main course.',
       isSignature: true,
     },
+    {
+      id: 'salad-tabbouleh',
+      categoryId: 'salads',
+      it: 'Tabbouleh Orientale',
+      ar: 'تبولة',
+      price: '39',
+      img: '/images/تبولة.jpeg',
+      description:
+        'سلطة الشرق الأوسط الكلاسيكية المحضرة من البرغل الطازج والبقدونس والبندورة والبصل الأخضر، متبلة بزيت الزيتون البكر وعصير الليمون الطازج.',
+      enDescription:
+        'Classic Middle Eastern salad made with fresh bulgur, parsley, tomatoes, and green onions, dressed with extra virgin olive oil and fresh lemon juice.',
+      isSignature: false,
+    },
+    {
+      id: 'salad-fattoush',
+      categoryId: 'salads',
+      it: 'Insalata Fattoush',
+      ar: 'فتوش',
+      price: '39',
+      img: '/images/فتوش.jpeg',
+      description:
+        'سلطة خضار منعشة مع الفلفل الحلو والخيار والبندورة والخس الأمريكي، مع قطع الخبز المحمص المقرمش وصوص الليمون وزيت الزيتون.',
+      enDescription:
+        'Fresh vegetable salad with bell peppers, cucumber, tomatoes, and iceberg lettuce, topped with crispy toasted bread and a lemon olive oil dressing.',
+      isSignature: false,
+    },
+    {
+      id: 'salad-greek',
+      categoryId: 'salads',
+      it: 'Insalata Greca',
+      ar: 'سلطة يونانية',
+      price: '41',
+      img: '/images/سلطة يونانية.jpeg',
+      description:
+        'السلطة اليونانية الأصيلة مع الفلفل الحلو والخيار والبندورة وزيتون الكلماتا وجبن الفيتا المبروش، مغطاة بزيت الزيتون البكر والأعشاب.',
+      enDescription:
+        'Authentic Greek salad with bell peppers, cucumber, tomatoes, Kalamata olives, and crumbled Feta cheese, drizzled with extra virgin olive oil and herbs.',
+      isSignature: false,
+    },
     // الاطفال (Bambini) - أمثلة
     {
       id: 'kids-pizza-margherita',
